@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69081ED514F2002FCAD3 /* AppDelegate.swift */; };
+		971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A690A1ED514F2002FCAD3 /* ViewController.swift */; };
+		971A690E1ED514F2002FCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A690C1ED514F2002FCAD3 /* Main.storyboard */; };
+		971A69101ED514F2002FCAD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 971A690F1ED514F2002FCAD3 /* Assets.xcassets */; };
+		971A69131ED514F2002FCAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */; };
+		971A691E1ED514F2002FCAD3 /* HuskyQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */; };
+		971A69291ED514F2002FCAD3 /* HuskyQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		971A691A1ED514F2002FCAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 971A68FD1ED514F2002FCAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971A69041ED514F2002FCAD3;
+			remoteInfo = HuskyQuest;
+		};
+		971A69251ED514F2002FCAD3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 971A68FD1ED514F2002FCAD3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 971A69041ED514F2002FCAD3;
+			remoteInfo = HuskyQuest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		971A69051ED514F2002FCAD3 /* HuskyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuskyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		971A69081ED514F2002FCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		971A690A1ED514F2002FCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		971A690D1ED514F2002FCAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		971A690F1ED514F2002FCAD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		971A69121ED514F2002FCAD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		971A69141ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971A69191ED514F2002FCAD3 /* HuskyQuestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuskyQuestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestTests.swift; sourceTree = "<group>"; };
+		971A691F1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		971A69241ED514F2002FCAD3 /* HuskyQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuskyQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestUITests.swift; sourceTree = "<group>"; };
+		971A692A1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		971A69021ED514F2002FCAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69161ED514F2002FCAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69211ED514F2002FCAD3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		971A68FC1ED514F2002FCAD3 = {
+			isa = PBXGroup;
+			children = (
+				971A69071ED514F2002FCAD3 /* HuskyQuest */,
+				971A691C1ED514F2002FCAD3 /* HuskyQuestTests */,
+				971A69271ED514F2002FCAD3 /* HuskyQuestUITests */,
+				971A69061ED514F2002FCAD3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		971A69061ED514F2002FCAD3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				971A69051ED514F2002FCAD3 /* HuskyQuest.app */,
+				971A69191ED514F2002FCAD3 /* HuskyQuestTests.xctest */,
+				971A69241ED514F2002FCAD3 /* HuskyQuestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		971A69071ED514F2002FCAD3 /* HuskyQuest */ = {
+			isa = PBXGroup;
+			children = (
+				971A69081ED514F2002FCAD3 /* AppDelegate.swift */,
+				971A690A1ED514F2002FCAD3 /* ViewController.swift */,
+				971A690C1ED514F2002FCAD3 /* Main.storyboard */,
+				971A690F1ED514F2002FCAD3 /* Assets.xcassets */,
+				971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */,
+				971A69141ED514F2002FCAD3 /* Info.plist */,
+			);
+			path = HuskyQuest;
+			sourceTree = "<group>";
+		};
+		971A691C1ED514F2002FCAD3 /* HuskyQuestTests */ = {
+			isa = PBXGroup;
+			children = (
+				971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */,
+				971A691F1ED514F2002FCAD3 /* Info.plist */,
+			);
+			path = HuskyQuestTests;
+			sourceTree = "<group>";
+		};
+		971A69271ED514F2002FCAD3 /* HuskyQuestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */,
+				971A692A1ED514F2002FCAD3 /* Info.plist */,
+			);
+			path = HuskyQuestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		971A69041ED514F2002FCAD3 /* HuskyQuest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971A692D1ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuest" */;
+			buildPhases = (
+				971A69011ED514F2002FCAD3 /* Sources */,
+				971A69021ED514F2002FCAD3 /* Frameworks */,
+				971A69031ED514F2002FCAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HuskyQuest;
+			productName = HuskyQuest;
+			productReference = 971A69051ED514F2002FCAD3 /* HuskyQuest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		971A69181ED514F2002FCAD3 /* HuskyQuestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971A69301ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestTests" */;
+			buildPhases = (
+				971A69151ED514F2002FCAD3 /* Sources */,
+				971A69161ED514F2002FCAD3 /* Frameworks */,
+				971A69171ED514F2002FCAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				971A691B1ED514F2002FCAD3 /* PBXTargetDependency */,
+			);
+			name = HuskyQuestTests;
+			productName = HuskyQuestTests;
+			productReference = 971A69191ED514F2002FCAD3 /* HuskyQuestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		971A69231ED514F2002FCAD3 /* HuskyQuestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 971A69331ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestUITests" */;
+			buildPhases = (
+				971A69201ED514F2002FCAD3 /* Sources */,
+				971A69211ED514F2002FCAD3 /* Frameworks */,
+				971A69221ED514F2002FCAD3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				971A69261ED514F2002FCAD3 /* PBXTargetDependency */,
+			);
+			name = HuskyQuestUITests;
+			productName = HuskyQuestUITests;
+			productReference = 971A69241ED514F2002FCAD3 /* HuskyQuestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		971A68FD1ED514F2002FCAD3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Chris Li";
+				TargetAttributes = {
+					971A69041ED514F2002FCAD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					971A69181ED514F2002FCAD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 971A69041ED514F2002FCAD3;
+					};
+					971A69231ED514F2002FCAD3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 971A69041ED514F2002FCAD3;
+					};
+				};
+			};
+			buildConfigurationList = 971A69001ED514F2002FCAD3 /* Build configuration list for PBXProject "HuskyQuest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 971A68FC1ED514F2002FCAD3;
+			productRefGroup = 971A69061ED514F2002FCAD3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				971A69041ED514F2002FCAD3 /* HuskyQuest */,
+				971A69181ED514F2002FCAD3 /* HuskyQuestTests */,
+				971A69231ED514F2002FCAD3 /* HuskyQuestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		971A69031ED514F2002FCAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971A69131ED514F2002FCAD3 /* LaunchScreen.storyboard in Resources */,
+				971A69101ED514F2002FCAD3 /* Assets.xcassets in Resources */,
+				971A690E1ED514F2002FCAD3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69171ED514F2002FCAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69221ED514F2002FCAD3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		971A69011ED514F2002FCAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */,
+				971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69151ED514F2002FCAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971A691E1ED514F2002FCAD3 /* HuskyQuestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		971A69201ED514F2002FCAD3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				971A69291ED514F2002FCAD3 /* HuskyQuestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		971A691B1ED514F2002FCAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971A69041ED514F2002FCAD3 /* HuskyQuest */;
+			targetProxy = 971A691A1ED514F2002FCAD3 /* PBXContainerItemProxy */;
+		};
+		971A69261ED514F2002FCAD3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 971A69041ED514F2002FCAD3 /* HuskyQuest */;
+			targetProxy = 971A69251ED514F2002FCAD3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		971A690C1ED514F2002FCAD3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971A690D1ED514F2002FCAD3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				971A69121ED514F2002FCAD3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		971A692B1ED514F2002FCAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		971A692C1ED514F2002FCAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		971A692E1ED514F2002FCAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HuskyQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		971A692F1ED514F2002FCAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = HuskyQuest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		971A69311ED514F2002FCAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HuskyQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuskyQuest.app/HuskyQuest";
+			};
+			name = Debug;
+		};
+		971A69321ED514F2002FCAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = HuskyQuestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HuskyQuest.app/HuskyQuest";
+			};
+			name = Release;
+		};
+		971A69341ED514F2002FCAD3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HuskyQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HuskyQuest;
+			};
+			name = Debug;
+		};
+		971A69351ED514F2002FCAD3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = HuskyQuestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ChrisLi.HuskyQuestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = HuskyQuest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		971A69001ED514F2002FCAD3 /* Build configuration list for PBXProject "HuskyQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971A692B1ED514F2002FCAD3 /* Debug */,
+				971A692C1ED514F2002FCAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		971A692D1ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971A692E1ED514F2002FCAD3 /* Debug */,
+				971A692F1ED514F2002FCAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		971A69301ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971A69311ED514F2002FCAD3 /* Debug */,
+				971A69321ED514F2002FCAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		971A69331ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				971A69341ED514F2002FCAD3 /* Debug */,
+				971A69351ED514F2002FCAD3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 971A68FD1ED514F2002FCAD3 /* Project object */;
+}
