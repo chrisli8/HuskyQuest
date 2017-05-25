@@ -87,6 +87,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="CharacterScreen" translatesAutoresizingMaskIntoConstraints="NO" id="SPK-7D-qXR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Character Customization" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bue-Lq-Co8">
                                 <rect key="frame" x="16" y="28" width="343" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -110,17 +113,25 @@
                                     <segue destination="BYZ-38-t0r" kind="show" id="0s8-49-ZXu"/>
                                 </connections>
                             </button>
+                            <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-28-T3V">
+                                <rect key="frame" x="0.0" y="213" width="375" height="216"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            </pickerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="Byk-Z5-beJ" firstAttribute="top" secondItem="SPK-7D-qXR" secondAttribute="bottom" id="2ee-Lw-eai"/>
                             <constraint firstItem="UIv-bY-OPt" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="Wbh-hd-8fZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SPK-7D-qXR" secondAttribute="trailing" id="Wmv-0v-B3A"/>
                             <constraint firstItem="Byk-Z5-beJ" firstAttribute="top" secondItem="UIv-bY-OPt" secondAttribute="bottom" constant="20" id="dzn-Oa-VNh"/>
+                            <constraint firstItem="SPK-7D-qXR" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leading" id="rwn-5T-M1X"/>
+                            <constraint firstItem="SPK-7D-qXR" firstAttribute="top" secondItem="9m4-KN-2fu" secondAttribute="top" id="wux-k0-ooJ"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFB-vc-W8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="865" y="137"/>
+            <point key="canvasLocation" x="864.79999999999995" y="136.28185907046478"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="msf-Vx-es8">
@@ -241,6 +252,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CharacterScreen" width="187" height="333"/>
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
 </document>
