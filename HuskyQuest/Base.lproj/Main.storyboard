@@ -109,7 +109,7 @@
                                 <rect key="frame" x="16" y="617" width="34" height="30"/>
                                 <state key="normal" title="Back"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="0s8-49-ZXu"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="m0c-YD-89D"/>
                                 </connections>
                             </button>
                             <pickerView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-28-T3V">
@@ -207,7 +207,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Story So Far" id="O8R-wK-my5">
-                        <barButtonItem key="leftBarButtonItem" title="Menu" id="3e7-2V-2Nd">
+                        <barButtonItem key="rightBarButtonItem" title="Menu" id="3e7-2V-2Nd">
                             <connections>
                                 <segue destination="iHX-DZ-ERZ" kind="show" id="57C-rD-6hC"/>
                             </connections>
@@ -216,7 +216,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="otV-zJ-ffE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1584.8" y="940.47976011994012"/>
+            <point key="canvasLocation" x="1612" y="940"/>
         </scene>
         <!--Make Your Choice-->
         <scene sceneID="01i-h8-7KZ">
@@ -290,7 +290,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7O-ih-mmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1612" y="136.28185907046478"/>
+            <point key="canvasLocation" x="1612" y="1659"/>
         </scene>
         <!--Settings & Stats-->
         <scene sceneID="Ry0-uh-1gA">
@@ -309,7 +309,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYT-3t-J02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2370" y="940"/>
+            <point key="canvasLocation" x="2350" y="940"/>
         </scene>
     </scenes>
     <resources>
@@ -317,6 +317,6 @@
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Rjp-Lj-9ml"/>
+        <segue reference="ZjO-cF-nuW"/>
     </inferredMetricsTieBreakers>
 </document>
