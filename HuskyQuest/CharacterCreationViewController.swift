@@ -9,10 +9,15 @@
 import UIKit
 
 class CharacterCreationViewController: UIViewController {
-
+    @IBOutlet weak var characterPicker: UIPickerView!
+    
+    var personalityPicker: PersonalityData!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        personalityPicker = PersonalityData();
+        characterPicker.delegate = personalityPicker;
+        characterPicker.dataSource = personalityPicker;
         // Do any additional setup after loading the view.
     }
     

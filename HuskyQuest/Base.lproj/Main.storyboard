@@ -193,6 +193,9 @@
                             <constraint firstAttribute="trailingMargin" secondItem="GBd-6y-OoL" secondAttribute="trailing" constant="79" id="xD9-lP-Hw0"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="characterPicker" destination="hY8-28-T3V" id="3i2-Gu-6mL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFB-vc-W8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
