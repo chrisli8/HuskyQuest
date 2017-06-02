@@ -1,7 +1,7 @@
 
 [
   {
-  "treetype" : "filler",
+  "treetype" : "filler1",
   "tree" :[
         {
             "page" : 0,
@@ -60,6 +60,8 @@
         }
         ]
   },
+
+
   {
     "treetype" : "Main",
     "tree" :[
@@ -84,7 +86,8 @@
         {
             "page" : 2,
             "type":"result",
-            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that theres some kind of weird black spots between the bed and the wall",
+            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that theres some kind of weird black spots
+            		 between the bed and the wall",
             "choices":[
                 {"title":"Continue","page":5, "decrease": "H", "increase":"RR"}
             ]
@@ -108,12 +111,73 @@
         },
         {
             "page" : 5,
-            "type":"story",
-            "text":"You finished unpacking and you're content with your room. Your friends text you that they just finished moving in and they want to explore Seattle. Your roommate mentions feeling a little bit hungry.",
+            "type":"choice",
+            "text":"You finished unpacking and you're content with your room. Your friends text you that they just finished moving in and they want to explore Seattle. 
+            		Your roommate mentions feeling a bit hungry.",
             "choices":[
                 {"title":"Get dinner with roommate","page":6},
                 {"title":"Go hang out with friends","page":7},
                 {"title":"Ask your roommate if he wants to join you and your friends","page":8}
+            ]
+        },
+        {
+            "page" :6,
+            "type" : "choice",
+            "text" : "You end up having a great time bonding with your roommate at dinner! They invite you out to their friends party this weekend. What do you do?",
+            "choices":[
+                {"title":"Accept the invitation", "page":9},
+                {"title":"Decline the invitation", "page":10}
+            ]
+        },
+        {
+            "page" : 8,
+            "type" : "result",
+            "text" : "You roommate is thrilled to be included and joins you and your friends. After dinner, you guys head down to gas works and chill for a bit. You realize 
+            		that some of your friends already know your roommate, creating tighter connections. You discover that you have classes with some of your friends, 
+            		as well as your roommate!",
+            "choices":[
+                {"title":"Continue", "page":12}
+            ]
+        }
+        {
+            "page" :9,
+            "type" : "result",
+            "text" : "You've just come back from the party with your roommate and their friends. You really enjoyed it and made a lot of new friends. 
+            		You can't wait to start classes and see them in your classes.",
+            "choices":[
+                {"title":"Continue", "page":11,  "FRED stats": "something about better roommate relationship, networking, but lower academic success"}
+            ]
+        },
+        {
+            "page" :10,
+            "type" : "result",
+            "text" : "You spend the weekend in and get a lot of prep work done before classes start on Monday. You feel content and ready for the quarter to start.",
+            "choices":[
+                {"title":"Continue", "page":12, "FRED stats": "something about greater academic success, a bit of a decrease in roommate relationship"}
+            ]
+        },
+        {
+            "page" : 11,
+            "type" : "story",
+            "text" : "You build your social connections and feel like you have a solid set of friends to go for study help.",
+            "choices":[
+                {"Continue":"", "page":12}
+            ]
+        },
+        {
+            "page" : 7,
+            "type" : "result",
+            "text" : "Your roommate feels a little rejected but cheerfully tells you to have fun. You go out and explore Seattle with your group of friends.",
+            "choices":[
+                {"title":"Continue", "page":11, "FRED stats": "something about decrease in roommate relationship, increase in socialness, something something"}
+            ]
+        },
+        {
+            "page" : 12,
+            "type" : "story",
+            "text" : "It's your first day of classes .......",
+            "choices":[
+                {"title":"", "page":0}
             ]
         },
         {
