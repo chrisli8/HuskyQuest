@@ -169,7 +169,7 @@
             "type" : "result",
             "text" : "Your roommate feels a little rejected but cheerfully tells you to have fun. You go out and explore Seattle with your group of friends.",
             "choices":[
-                {"title":"Continue", "page":11, "FRED stats": "something about decrease in roommate relationship, increase in socialness, something something"}
+                {"title":"Continue", "page":11, "FRED stats": "something about decrease in roommate relationship, increase in socialness, something something”}
             ]
         },
         {

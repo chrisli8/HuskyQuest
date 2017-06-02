@@ -21,16 +21,21 @@ class StoryViewController: UIViewController {
     var jsonArray:[[String:Any]] = []
     var currTree:[[String:Any]] = []
     var choices:[[String:Any]] = []
-    var mainIndex = 0
+    var currTreeName = "Main"
+    var bookmarkIndex = [
+        "main" : 0,
+        "filler" : 0,
+        "subtreenamehere" : 0
+    ]
     var StatsIndex = [
-        "RR" : 0,
-        "U" : 1,
-        "D" : 2,
-        "C" : 3,
-        "H" : 4,
+        "RR" : 0, //Roomate Relationship
+        "U" : 1, //?
+        "D" : 2, // ?
+        "C" : 3, //?
+        "H" : 4, //Health
         
     ]
-    var Stats = [5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
+    var Stats = [5,0,0,0,10,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     override func viewDidLoad() {
         let destination: DownloadRequest.DownloadFileDestination = {_, _ in
@@ -64,6 +69,8 @@ class StoryViewController: UIViewController {
     }
     
     @IBAction func choiceClick(_ sender: UIButton) {
+        
+        //Updates what was picked
         var pickedChoice : [String:Any] = [:]
         if sender.tag == 1 {
             pickedChoice = self.choices[0]
@@ -72,6 +79,8 @@ class StoryViewController: UIViewController {
         } else {
             pickedChoice = self.choices[2]
         }
+        
+        //StatChanges
         if pickedChoice["increase"] != nil {
             Stats[StatsIndex[pickedChoice["increase"] as! String]!] += 1
         }
@@ -79,14 +88,23 @@ class StoryViewController: UIViewController {
             Stats[StatsIndex[pickedChoice["increase"] as! String]!] -= 1
         }
         
-        mainIndex = pickedChoice["page"] as! Int
+        //Tree Swap Support
+        if pickedChoice["changeTree"] != nil {
+            currTreeName = pickedChoice["changeTree"] as! String
+        }
+        if pickedChoice["page"] as! String != "current" {
+            bookmarkIndex[currTreeName] = pickedChoice["page"] as? Int
+        }
+        
         turnPage()
         
     }
     
     func turnPage(){
-        StoryTextBox.text = currTree[mainIndex]["text"] as! String
-        self.choices = self.currTree[mainIndex]["choices"] as! [[String:Any]]
+        
+        //Updates story text box and hides/unhides choices based on existence
+        StoryTextBox.text = currTree[bookmarkIndex[currTreeName]!]["text"] as! String
+        self.choices = self.currTree[bookmarkIndex[currTreeName]!]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
         self.Choice2Button.isHidden = true
         self.Choice3Button.isHidden = true
@@ -95,7 +113,7 @@ class StoryViewController: UIViewController {
             var Random = Int(arc4random_uniform(100))
             self.Choice2Button.setTitle(self.choices[1]["title"] as? String, for: UIControlState.normal)
             if self.choices[1]["modifier"] != nil {
-                Random += Stats[StatsIndex[self.choices[1]["modifier"] as! String]!] * 10
+                Random += Stats[StatsIndex[self.choices[1]["modifier"] as! String]!] * 5
             }
             if self.choices[1]["chance"] != nil && Random <= self.choices[1]["chance"] as! Int{
                 self.Choice2Button.isHidden = true
@@ -106,7 +124,7 @@ class StoryViewController: UIViewController {
                 self.Choice3Button.setTitle(self.choices[2]["title"] as? String, for: UIControlState.normal)
                 
                 if self.choices[2]["modifier"] != nil {
-                    Random += Stats[StatsIndex[self.choices[2]["modifier"] as! String]!] * 10
+                    Random += Stats[StatsIndex[self.choices[2]["modifier"] as! String]!] * 5
                 }
                 if self.choices[2]["chance"] != nil && Random <= self.choices[2]["chance"] as! Int{
                     self.Choice3Button.isHidden = true
