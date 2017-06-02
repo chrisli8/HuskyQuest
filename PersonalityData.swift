@@ -10,6 +10,7 @@ import UIKit
 
 class PersonalityData: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegate {
     
+    // Data source based on personality test
     var pickerDataSource = [["I", "E"], ["N", "S"], ["T", "F"], ["J", "P"]];
     
     func numberOfComponents(in pickerView: UIPickerView) -> Int {
