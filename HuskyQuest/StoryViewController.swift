@@ -16,7 +16,11 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var Choice2Button: UIButton!
     @IBOutlet weak var Choice3Button: UIButton!
     
+    
     var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
+    var jsonArray:[[String:Any]] = []
+    var currTree:[[String:Any]] = []
+    var choices:[[String:Any]] = []
 
     override func viewDidLoad() {
         
@@ -33,18 +37,31 @@ class StoryViewController: UIViewController {
             if let JSON = response.result.value{
                 print("JSON: \(JSON)")
             }
-            
-            var jsonArray:[[String:Any]] = []
+
             let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
             
             if content != nil{
                 do{
-                    jsonArray = try JSONSerialization.jsonObject(with: content! as Data, options: []) as! [[String:Any]]
+                    self.jsonArray = try JSONSerialization.jsonObject(with: content! as Data, options: []) as! [[String:Any]]
                 } catch {
                     print("ERROR ERROR FILE NOT FOUND")
                 }
             }
-            print(jsonArray[1]["treetype"]!)
+            
+            print(self.jsonArray[1]["tree"]!)
+            self.currTree = self.jsonArray[1]["tree"] as! [[String:Any]]
+            self.StoryTextBox.text = self.currTree[0]["text"]! as! String
+            self.choices = self.currTree[0]["choices"] as! [[String:Any]]
+            
+            self.Choice1Button.setTitle(self.choices[0]["title"] as! String, for: UIControlState.normal)
+            if self.choices.count > 2{
+                self.Choice2Button.setTitle(self.choices[2]["title"] as! String, for: UIControlState.normal)
+                
+                if self.choices.count > 3{
+                    self.Choice3Button.setTitle(self.choices[3]["title"] as! String, for: UIControlState.normal)
+                }
+            }
+            
             
             
         }
