@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -148,7 +148,7 @@
         <scene sceneID="KJU-2n-Vi0">
             <objects>
                 <navigationController id="7A6-6W-bJx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ITD-pQ-xW2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITD-pQ-xW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -243,7 +243,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="A4T-gD-sXb">
                                 <rect key="frame" x="16" y="488" width="343" height="106"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-TF-bWL">
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Adm-TF-bWL">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="30"/>
                                         <color key="backgroundColor" red="0.22745098039215686" green="0.10588235294117647" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Choice 1">
@@ -253,7 +253,7 @@
                                             <action selector="choiceClick:" destination="W8l-B3-sWb" eventType="touchUpInside" id="Xaa-rq-cB1"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-qQ-hIz">
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-qQ-hIz">
                                         <rect key="frame" x="0.0" y="38" width="343" height="30"/>
                                         <color key="backgroundColor" red="0.22745098039215686" green="0.10588235294117647" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Choice 2">
@@ -263,7 +263,7 @@
                                             <action selector="choiceClick:" destination="W8l-B3-sWb" eventType="touchUpInside" id="QC7-78-W1V"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-vp-DyY">
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-vp-DyY">
                                         <rect key="frame" x="0.0" y="76" width="343" height="30"/>
                                         <color key="backgroundColor" red="0.22745098039215686" green="0.10588235294117647" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                                         <state key="normal" title="Choice 3">
