@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
-        <!--View Controller-->
+        <!--Character Creation View Controller-->
         <scene sceneID="O5D-T1-10Y">
             <objects>
-                <viewController modalTransitionStyle="partialCurl" id="rjf-qV-amP" sceneMemberID="viewController">
+                <viewController modalTransitionStyle="partialCurl" id="rjf-qV-amP" customClass="CharacterCreationViewController" customModule="HuskyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="S7y-GP-oAO"/>
                         <viewControllerLayoutGuide type="bottom" id="Byk-Z5-beJ"/>
@@ -457,7 +457,7 @@
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WvE-YD-FlJ"/>
-        <segue reference="abf-fy-Njd"/>
+        <segue reference="Rjp-Lj-9ml"/>
+        <segue reference="n7c-B6-glL"/>
     </inferredMetricsTieBreakers>
 </document>

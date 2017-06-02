@@ -16,6 +16,7 @@
 		971A69131ED514F2002FCAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */; };
 		971A691E1ED514F2002FCAD3 /* HuskyQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */; };
 		971A69291ED514F2002FCAD3 /* HuskyQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */; };
+		976ADCD31EE21CFD007785F4 /* CharacterCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		971A69241ED514F2002FCAD3 /* HuskyQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuskyQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestUITests.swift; sourceTree = "<group>"; };
 		971A692A1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreationViewController.swift; sourceTree = "<group>"; };
 		BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E372226440A458C9006C6770 /* Pods-HuskyQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest.release.xcconfig"; sourceTree = "<group>"; };
 		F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -115,6 +117,7 @@
 				971A690F1ED514F2002FCAD3 /* Assets.xcassets */,
 				971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */,
 				971A69141ED514F2002FCAD3 /* Info.plist */,
+				976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */,
 			);
 			path = HuskyQuest;
 			sourceTree = "<group>";
@@ -342,6 +345,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A629381EE1129D00108557 /* StoryViewController.swift in Sources */,
+				976ADCD31EE21CFD007785F4 /* CharacterCreationViewController.swift in Sources */,
 				971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */,
 				971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */,
 			);
