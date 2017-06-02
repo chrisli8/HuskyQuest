@@ -56,7 +56,6 @@ class StoryViewController: UIViewController {
             self.Choice1Button.setTitle(self.choices[0]["title"] as! String, for: UIControlState.normal)
             if self.choices.count > 2{
                 self.Choice2Button.setTitle(self.choices[2]["title"] as! String, for: UIControlState.normal)
-                
                 if self.choices.count > 3{
                     self.Choice3Button.setTitle(self.choices[3]["title"] as! String, for: UIControlState.normal)
                 }
@@ -65,6 +64,9 @@ class StoryViewController: UIViewController {
             
             
         }
+    }
+    
+    @IBAction func choiceClick(_ sender: Any) {
     }
     
     

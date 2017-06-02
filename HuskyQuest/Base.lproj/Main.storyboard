@@ -148,7 +148,7 @@
         <scene sceneID="KJU-2n-Vi0">
             <objects>
                 <navigationController id="7A6-6W-bJx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITD-pQ-xW2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ITD-pQ-xW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -249,6 +249,9 @@
                                         <state key="normal" title="Choice 1">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceClick:" destination="W8l-B3-sWb" eventType="touchUpInside" id="Xaa-rq-cB1"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6rh-qQ-hIz">
                                         <rect key="frame" x="0.0" y="38" width="343" height="30"/>
@@ -256,6 +259,9 @@
                                         <state key="normal" title="Choice 2">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceClick:" destination="W8l-B3-sWb" eventType="touchUpInside" id="QC7-78-W1V"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0kP-vp-DyY">
                                         <rect key="frame" x="0.0" y="76" width="343" height="30"/>
@@ -263,6 +269,9 @@
                                         <state key="normal" title="Choice 3">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <action selector="choiceClick:" destination="W8l-B3-sWb" eventType="touchUpInside" id="QTi-J3-Lme"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
