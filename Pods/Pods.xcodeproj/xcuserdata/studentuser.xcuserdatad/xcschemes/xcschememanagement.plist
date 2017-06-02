@@ -14,35 +14,15 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-HuskyQuestTests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
-		<key>Pods-HuskyQuestUITests.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>3F43DFE3E9AE65F367CF08B0412C1BE3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
 		<key>809CCA3FC397F5D91D9821017C3E468C</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>88E9EC28B8B46C3631E6B242B50F4442</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>8983A1CA394A21CB331C997EE724E917</key>
 		<dict>
 			<key>primary</key>
 			<true/>
