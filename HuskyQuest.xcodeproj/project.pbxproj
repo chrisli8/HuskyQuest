@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49A629381EE1129D00108557 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A629371EE1129D00108557 /* StoryViewController.swift */; };
 		971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69081ED514F2002FCAD3 /* AppDelegate.swift */; };
 		971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A690A1ED514F2002FCAD3 /* ViewController.swift */; };
 		971A690E1ED514F2002FCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A690C1ED514F2002FCAD3 /* Main.storyboard */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		49A629371EE1129D00108557 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		971A69051ED514F2002FCAD3 /* HuskyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuskyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A69081ED514F2002FCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		971A690A1ED514F2002FCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				971A69081ED514F2002FCAD3 /* AppDelegate.swift */,
 				971A690A1ED514F2002FCAD3 /* ViewController.swift */,
 				971A690C1ED514F2002FCAD3 /* Main.storyboard */,
+				49A629371EE1129D00108557 /* StoryViewController.swift */,
 				971A690F1ED514F2002FCAD3 /* Assets.xcassets */,
 				971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */,
 				971A69141ED514F2002FCAD3 /* Info.plist */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49A629381EE1129D00108557 /* StoryViewController.swift in Sources */,
 				971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */,
 				971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				971A692F1ED514F2002FCAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		971A69301ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				971A69321ED514F2002FCAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		971A69331ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				971A69351ED514F2002FCAD3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

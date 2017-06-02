@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -221,7 +221,7 @@
         <!--Make Your Choice-->
         <scene sceneID="01i-h8-7KZ">
             <objects>
-                <viewController id="W8l-B3-sWb" sceneMemberID="viewController">
+                <viewController id="W8l-B3-sWb" customClass="StoryViewController" customModule="HuskyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Swq-mY-iCA"/>
                         <viewControllerLayoutGuide type="bottom" id="clh-DI-kSM"/>
@@ -287,6 +287,12 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Make Your Choice" id="VPs-nY-vBw"/>
+                    <connections>
+                        <outlet property="Choice1Button" destination="Adm-TF-bWL" id="1wo-p5-flg"/>
+                        <outlet property="Choice2Button" destination="6rh-qQ-hIz" id="Elr-Q6-6C5"/>
+                        <outlet property="Choice3Button" destination="0kP-vp-DyY" id="jpN-la-jhq"/>
+                        <outlet property="StoryTextBox" destination="zGT-PA-HrH" id="LDc-ji-y87"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o7O-ih-mmd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
