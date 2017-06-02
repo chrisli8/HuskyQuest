@@ -1,0 +1,6 @@
+framework module Pods_HuskyQuest {
+  umbrella header "Pods-HuskyQuest-umbrella.h"
+
+  export *
+  module * { export * }
+}

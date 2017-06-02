@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33A0206D6BBCD515FA946C7A /* Pods_HuskyQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */; };
 		49A629381EE1129D00108557 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A629371EE1129D00108557 /* StoryViewController.swift */; };
+		515F4677EB5724591CC58BFA /* Pods_HuskyQuestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BA9890378F8AE16C20533F6 /* Pods_HuskyQuestTests.framework */; };
 		971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69081ED514F2002FCAD3 /* AppDelegate.swift */; };
 		971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A690A1ED514F2002FCAD3 /* ViewController.swift */; };
 		971A690E1ED514F2002FCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A690C1ED514F2002FCAD3 /* Main.storyboard */; };
@@ -15,6 +17,7 @@
 		971A69131ED514F2002FCAD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A69111ED514F2002FCAD3 /* LaunchScreen.storyboard */; };
 		971A691E1ED514F2002FCAD3 /* HuskyQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */; };
 		971A69291ED514F2002FCAD3 /* HuskyQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */; };
+		9CBA0C068114F4D3600AFFE2 /* Pods_HuskyQuestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		233F04A10B462B1AB70FA473 /* Pods-HuskyQuestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuestUITests/Pods-HuskyQuestUITests.release.xcconfig"; sourceTree = "<group>"; };
 		49A629371EE1129D00108557 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
+		5BA9890378F8AE16C20533F6 /* Pods_HuskyQuestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93D4806C6B8198181323CAF0 /* Pods-HuskyQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest.debug.xcconfig"; sourceTree = "<group>"; };
 		971A69051ED514F2002FCAD3 /* HuskyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuskyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A69081ED514F2002FCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		971A690A1ED514F2002FCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -49,6 +55,12 @@
 		971A69241ED514F2002FCAD3 /* HuskyQuestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HuskyQuestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestUITests.swift; sourceTree = "<group>"; };
 		971A692A1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BB2BDC5C1764B889A8B0809F /* Pods-HuskyQuestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuestTests/Pods-HuskyQuestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C01141B522C9181FECC749E6 /* Pods-HuskyQuestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuestTests/Pods-HuskyQuestTests.release.xcconfig"; sourceTree = "<group>"; };
+		C65543DDBFD538477DCE6604 /* Pods-HuskyQuestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuestUITests/Pods-HuskyQuestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		E372226440A458C9006C6770 /* Pods-HuskyQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest.release.xcconfig"; sourceTree = "<group>"; };
+		F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33A0206D6BBCD515FA946C7A /* Pods_HuskyQuest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				515F4677EB5724591CC58BFA /* Pods_HuskyQuestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CBA0C068114F4D3600AFFE2 /* Pods_HuskyQuestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				971A691C1ED514F2002FCAD3 /* HuskyQuestTests */,
 				971A69271ED514F2002FCAD3 /* HuskyQuestUITests */,
 				971A69061ED514F2002FCAD3 /* Products */,
+				9CED90FB55A12B5B7F856AC3 /* Pods */,
+				D6C32B1131574F8D1D055C35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,29 @@
 			path = HuskyQuestUITests;
 			sourceTree = "<group>";
 		};
+		9CED90FB55A12B5B7F856AC3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				93D4806C6B8198181323CAF0 /* Pods-HuskyQuest.debug.xcconfig */,
+				E372226440A458C9006C6770 /* Pods-HuskyQuest.release.xcconfig */,
+				BB2BDC5C1764B889A8B0809F /* Pods-HuskyQuestTests.debug.xcconfig */,
+				C01141B522C9181FECC749E6 /* Pods-HuskyQuestTests.release.xcconfig */,
+				C65543DDBFD538477DCE6604 /* Pods-HuskyQuestUITests.debug.xcconfig */,
+				233F04A10B462B1AB70FA473 /* Pods-HuskyQuestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D6C32B1131574F8D1D055C35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */,
+				5BA9890378F8AE16C20533F6 /* Pods_HuskyQuestTests.framework */,
+				BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +175,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971A692D1ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuest" */;
 			buildPhases = (
+				B78EA480FCFD762BBCE2DF28 /* [CP] Check Pods Manifest.lock */,
 				971A69011ED514F2002FCAD3 /* Sources */,
 				971A69021ED514F2002FCAD3 /* Frameworks */,
 				971A69031ED514F2002FCAD3 /* Resources */,
+				0D747F434EED7F08382210A2 /* [CP] Embed Pods Frameworks */,
+				C094B523DB1D5DBF4D7BA271 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +195,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971A69301ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestTests" */;
 			buildPhases = (
+				1CD00C56AC42CA053021DFAD /* [CP] Check Pods Manifest.lock */,
 				971A69151ED514F2002FCAD3 /* Sources */,
 				971A69161ED514F2002FCAD3 /* Frameworks */,
 				971A69171ED514F2002FCAD3 /* Resources */,
+				566B293F30934F5F71DDCD97 /* [CP] Embed Pods Frameworks */,
+				A24DD83435775DC2F8ADDB57 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -170,9 +216,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 971A69331ED514F2002FCAD3 /* Build configuration list for PBXNativeTarget "HuskyQuestUITests" */;
 			buildPhases = (
+				D9C5F9013F333BF363AD3948 /* [CP] Check Pods Manifest.lock */,
 				971A69201ED514F2002FCAD3 /* Sources */,
 				971A69211ED514F2002FCAD3 /* Frameworks */,
 				971A69221ED514F2002FCAD3 /* Resources */,
+				2C70C7FC58EE1206CEFECB78 /* [CP] Embed Pods Frameworks */,
+				ABF20ED2E04E0F0CF3DD03A1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -256,6 +305,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0D747F434EED7F08382210A2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1CD00C56AC42CA053021DFAD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		2C70C7FC58EE1206CEFECB78 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuestUITests/Pods-HuskyQuestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		566B293F30934F5F71DDCD97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuestTests/Pods-HuskyQuestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A24DD83435775DC2F8ADDB57 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuestTests/Pods-HuskyQuestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ABF20ED2E04E0F0CF3DD03A1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuestUITests/Pods-HuskyQuestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B78EA480FCFD762BBCE2DF28 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C094B523DB1D5DBF4D7BA271 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D9C5F9013F333BF363AD3948 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		971A69011ED514F2002FCAD3 /* Sources */ = {
@@ -414,6 +601,7 @@
 		};
 		971A692E1ED514F2002FCAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 93D4806C6B8198181323CAF0 /* Pods-HuskyQuest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HuskyQuest/Info.plist;
@@ -426,6 +614,7 @@
 		};
 		971A692F1ED514F2002FCAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E372226440A458C9006C6770 /* Pods-HuskyQuest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = HuskyQuest/Info.plist;
@@ -438,6 +627,7 @@
 		};
 		971A69311ED514F2002FCAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB2BDC5C1764B889A8B0809F /* Pods-HuskyQuestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -452,6 +642,7 @@
 		};
 		971A69321ED514F2002FCAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C01141B522C9181FECC749E6 /* Pods-HuskyQuestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -466,6 +657,7 @@
 		};
 		971A69341ED514F2002FCAD3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C65543DDBFD538477DCE6604 /* Pods-HuskyQuestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HuskyQuestUITests/Info.plist;
@@ -479,6 +671,7 @@
 		};
 		971A69351ED514F2002FCAD3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 233F04A10B462B1AB70FA473 /* Pods-HuskyQuestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				INFOPLIST_FILE = HuskyQuestUITests/Info.plist;

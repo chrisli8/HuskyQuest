@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Alamofire
 
 class StoryViewController: UIViewController {
 
@@ -14,4 +15,6 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var Choice1Button: UIButton!
     @IBOutlet weak var Choice2Button: UIButton!
     @IBOutlet weak var Choice3Button: UIButton!
+    
+    
 }
