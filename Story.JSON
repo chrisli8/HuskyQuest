@@ -1,0 +1,135 @@
+
+[
+  {
+  "treetype" : "filler",
+  "tree" :[
+        {
+            "page" : 0,
+            "type":"story",
+            "text":"You currently have free time between classes",
+            "image" : "outside.jpg",
+            "choices":[
+                {"title":"Continue","page":1}
+                ]
+        },
+        {
+            "page" : 1,
+            "type":"choice",
+            "text":"What will you do?",
+            "choices":[
+                {"title":"Go to Office Hours","page":2},
+                {"title":"Study at the Library","page":3},
+                {"title":"Take a Break at the HUB","page":4}
+                ]
+        },
+        {
+            "page" : 2,
+            "type":"result",
+            "text":"The TA clarified many misunderstandings. (Understanding Up)",
+            "image" : "officeHours.jpg",
+            "choices":[
+                {"title":"Continue","page":5, "increase": "U"}
+            ]
+        },
+        {
+            "page" : 3,
+            "type":"result",
+            "text":"Your study time at the library was productive. (Diligence Up)",
+            "image" : "library.jpg",
+            "choices":[
+                {"title":"Continue","page":5, "increase": "D"}
+                ]
+        },
+        {
+            "page" : 4,
+            "type":"result",
+            "text":"You spent time talking with Friend A. (Charisma Up)",
+            "image" : "friendtalking.jpg",
+            "choices":[
+                {"title":"Continue","page":5, "increase": "C"}
+                ]
+        },
+        {
+            "page" : 5,
+            "type":"story",
+            "text":"You went to your next class.",
+            "image" : "class.jpg",
+            "choices":[
+                {"title":"Start Over","page": "Exit"}
+            ]
+        }
+        ]
+  },
+  {
+    "treetype" : "Main",
+    "tree" :[
+        {
+            "page" : 0,
+            "type":"story",
+            "text":"You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet.",
+            "choices":[
+                {"title":"Continue","page":1}
+                ]
+        },
+        {
+            "page" : 1,
+            "type":"choice",
+            "text":" \"Hi! What side of the room do you want? I'd like the left side with the bigger window, but I'm fine with anything\" ",
+            "choices":[
+                {"title":"Sure, you can have the left side, I'll take the right ","page":2},
+                {"title":"Uh, I want the left side","page":3},
+                {"title": "Flip a coin?","page":4}
+                ]
+        },
+        {
+            "page" : 2,
+            "type":"result",
+            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that theres some kind of weird black spots between the bed and the wall",
+            "choices":[
+                {"title":"Continue","page":5, "decrease": "H", "increase":"RR"}
+            ]
+        },
+        {
+            "page" : 3,
+            "type":"result",
+            "text":"You begin unpacking your things on the left side of the room.",
+            "choices":[
+                {"title":"Continue","page":5, "decrease": "RR"}
+            ]
+        },
+        {
+            "page" : 4,
+            "type" : "result",
+            "text" : "You pull out an old quarter from your backpocket. Your roommates calls tails for the left side, heads for the right side.",
+            "choices":[
+                {"title" : "Your flip resulted in a tails. Your roommate begins unpacking on the left side. Continue", "chance" : 50, "page" : 2},
+                {"title" : "Your flip resulted in a heads. Your roommate begins unpacking on the right side. Continue", "chance" : 50, "page" : 3}
+            ]
+        },
+        {
+            "page" : 5,
+            "type":"story",
+            "text":"You finished unpacking and you're content with your room. Your friends text you that they just finished moving in and they want to explore Seattle. Your roommate mentions feeling a little bit hungry.",
+            "choices":[
+                {"title":"Get dinner with roommate","page":6},
+                {"title":"Go hang out with friends","page":7},
+                {"title":"Ask your roommate if he wants to join you and your friends","page":8}
+            ]
+        },
+        {
+            "page" : 0,
+            "type" : "",
+            "text" : "",
+            "choices":[
+                {"title":"", "page":0}
+            ]
+        }
+    ]
+  },
+  {
+    "treetype" : "INSERTNAMEOFSUBTREEHERE",
+    "tree" :[
+    ]
+  }
+]
+    
