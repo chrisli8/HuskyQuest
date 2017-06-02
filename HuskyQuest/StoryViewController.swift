@@ -75,7 +75,7 @@ class StoryViewController: UIViewController {
             Stats[StatsIndex[pickedChoice["increase"] as! String]!] -= 1
         }
         
-        mainIndex = pickedChoice["page"] as! Int
+        mainIndex = pickedChoice["response"] as! Int
         turnPage()
         
     }
@@ -84,10 +84,12 @@ class StoryViewController: UIViewController {
         StoryTextBox.text = currTree[mainIndex]["text"] as! String
         self.choices = self.currTree[mainIndex]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
+        self.Choice2Button.isHidden = true
+        self.Choice3Button.isHidden = true
         if self.choices.count > 2{
+            self.Choice2Button.isHidden = false
             var Random = Int(arc4random_uniform(100))
             self.Choice2Button.setTitle(self.choices[1]["title"] as? String, for: UIControlState.normal)
-            self.Choice2Button.isHidden = true
             if self.choices[1]["modifier"] != nil {
                 Random += Stats[StatsIndex[self.choices[1]["modifier"] as! String]!] * 10
             }
@@ -96,8 +98,9 @@ class StoryViewController: UIViewController {
             }
             Random = Int(arc4random_uniform(100))
             if self.choices.count > 3{
+                self.Choice3Button.isHidden = false
                 self.Choice3Button.setTitle(self.choices[2]["title"] as? String, for: UIControlState.normal)
-                self.Choice3Button.isHidden = true
+                
                 if self.choices[2]["modifier"] != nil {
                     Random += Stats[StatsIndex[self.choices[2]["modifier"] as! String]!] * 10
                 }
