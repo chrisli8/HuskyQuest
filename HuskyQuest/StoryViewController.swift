@@ -24,9 +24,13 @@ class StoryViewController: UIViewController {
     var mainIndex = 0
     var StatsIndex = [
         "RR" : 0,
-        "stat2" : 1
+        "U" : 1,
+        "D" : 2,
+        "C" : 3,
+        "H" : 4,
+        
     ]
-    var Stats = [5,0,0,0,0,0,0]
+    var Stats = [5,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]
 
     override func viewDidLoad() {
         let destination: DownloadRequest.DownloadFileDestination = {_, _ in
@@ -75,7 +79,7 @@ class StoryViewController: UIViewController {
             Stats[StatsIndex[pickedChoice["increase"] as! String]!] -= 1
         }
         
-        mainIndex = pickedChoice["response"] as! Int
+        mainIndex = pickedChoice["page"] as! Int
         turnPage()
         
     }
@@ -96,9 +100,9 @@ class StoryViewController: UIViewController {
             if self.choices[1]["chance"] != nil && Random <= self.choices[1]["chance"] as! Int{
                 self.Choice2Button.isHidden = true
             }
-            Random = Int(arc4random_uniform(100))
             if self.choices.count > 3{
                 self.Choice3Button.isHidden = false
+                Random = Int(arc4random_uniform(100))
                 self.Choice3Button.setTitle(self.choices[2]["title"] as? String, for: UIControlState.normal)
                 
                 if self.choices[2]["modifier"] != nil {
