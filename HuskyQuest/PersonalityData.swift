@@ -35,7 +35,20 @@ class PersonalityData: UIPickerView, UIPickerViewDataSource, UIPickerViewDelegat
     
     // React to picker view select
     func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
-
+        var personality = ""
+        for index in 0...pickerDataSource.count {
+            let choice = pickerDataSource[index][row] as String
+            // for variable length words
+            let charAt = choice.index(choice.startIndex, offsetBy: 1)
+            
+            // for intuition
+            if index == 1 && row == 1 {
+                personality += String(choice[charAt]).capitalized
+            } else {
+                personality += choice.substring(to: charAt)
+            }
+        }
+        
     }
     
     // Change font size of items in pickerview

@@ -56,12 +56,29 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         return pickerDataSource[component][row]
     }
     
+    // React to picker view select
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        // Convert to character array
+        var personality = self.personalityLabel.text! as String
+        var chars = Array(personality.characters)
         
+        let choice = (pickerDataSource[component][row] as String).uppercased()
+        let secondChar = choice.index(choice.startIndex, offsetBy: 1)
+        let firstChar = choice.index(choice.startIndex, offsetBy: 0)
+        // for intuition case
+        if component == 1 && row == 0 {
+            chars[component] = choice[secondChar]
+        } else {
+            chars[component] = choice[firstChar]
+        }
+        
+        let label = String(chars)
+        
+        self.personalityLabel.text = label
     }
     
-    // React to picker view select
-    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+    // Takes in a personality label E.G. (ENFP) and returns a description of that type
+    func getPersonalityDescription(personalityLabel: String) {
         
     }
     
