@@ -13,6 +13,8 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     @IBOutlet weak var personalityLabel: UILabel!
     
+    @IBOutlet weak var personalityDescription: UITextView!
+    
     // Data source based on personality test
     var pickerDataSource = [["Introversion", "Extraversion"], ["Intuition", "Sensing"], ["Thinking", "Feeling"], ["Judging", "Perceiving"]];
     
@@ -75,6 +77,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         let label = String(chars)
         
         self.personalityLabel.text = label
+        self.personalityDescription.text = AppData.shared.personalityMap[label]
     }
     
     // Takes in a personality label E.G. (ENFP) and returns a description of that type
