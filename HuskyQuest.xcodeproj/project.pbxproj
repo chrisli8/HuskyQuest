@@ -55,7 +55,7 @@
 		971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestUITests.swift; sourceTree = "<group>"; };
 		971A692A1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreationViewController.swift; sourceTree = "<group>"; };
-		976ADCD41EE22291007785F4 /* PersonalityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PersonalityData.swift; path = ../PersonalityData.swift; sourceTree = "<group>"; };
+		976ADCD41EE22291007785F4 /* PersonalityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityData.swift; sourceTree = "<group>"; };
 		BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E372226440A458C9006C6770 /* Pods-HuskyQuest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuest.release.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest.release.xcconfig"; sourceTree = "<group>"; };
 		F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuest.framework; sourceTree = BUILT_PRODUCTS_DIR; };

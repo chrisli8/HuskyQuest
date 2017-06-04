@@ -8,16 +8,18 @@
 
 import UIKit
 
-class CharacterCreationViewController: UIViewController {
+class CharacterCreationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
     @IBOutlet weak var characterPicker: UIPickerView!
     
-    var personalityPicker: PersonalityData!;
+    @IBOutlet weak var personalityLabel: UILabel!
+    
+    // Data source based on personality test
+    var pickerDataSource = [["Introversion", "Extraversion"], ["Intuition", "Sensing"], ["Thinking", "Feeling"], ["Judging", "Perceiving"]];
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        personalityPicker = PersonalityData();
-        characterPicker.delegate = personalityPicker;
-        characterPicker.dataSource = personalityPicker;
+        characterPicker.delegate = self;
+        characterPicker.dataSource = self;
         // Do any additional setup after loading the view.
     }
     
@@ -38,6 +40,46 @@ class CharacterCreationViewController: UIViewController {
                 self.view.removeGestureRecognizer(gesture)
             }
         }
+    }
+    
+    // MARK: - picker delegate code
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 4
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return pickerDataSource[component].count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return pickerDataSource[component][row]
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+    }
+    
+    // React to picker view select
+    func pickerView(pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        
+    }
+    
+    // Change font size of items in pickerview
+    func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
+        
+        var label: UILabel
+        if let view = view as? UILabel { label = view }
+        else { label = UILabel() }
+        
+        label.text = pickerDataSource[component][row]
+        label.textAlignment = .center
+        label.font = UIFont(name: "Montserrat", size: 16)
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.5
+        
+        return label
+        
     }
 
     /*

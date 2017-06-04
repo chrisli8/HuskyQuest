@@ -134,17 +134,20 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-28-T3V">
-                                <rect key="frame" x="16" y="222.5" width="343" height="216"/>
+                            <pickerView contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="hY8-28-T3V" customClass="PersonalityData" customModule="HuskyQuest" customModuleProvider="target">
+                                <rect key="frame" x="16" y="222" width="343" height="110"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="110" id="0VL-Xq-DSg"/>
+                                </constraints>
                             </pickerView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personality Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-6y-OoL">
-                                <rect key="frame" x="88" y="182" width="192" height="32.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="INTJ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBd-6y-OoL">
+                                <rect key="frame" x="160" y="182" width="54" height="32.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="27"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="LRd-aa-k56">
-                                <rect key="frame" x="16" y="446.5" width="343" height="96"/>
+                                <rect key="frame" x="16" y="340" width="343" height="96"/>
                                 <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="96" id="d0s-O0-Bu3"/>
@@ -160,21 +163,21 @@
                             <constraint firstItem="LRd-aa-k56" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="5Co-yi-cf4"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="5ZM-KX-onm"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="top" secondItem="S7y-GP-oAO" secondAttribute="bottom" constant="8" id="5zx-iE-06W"/>
+                            <constraint firstItem="hY8-28-T3V" firstAttribute="top" secondItem="GBd-6y-OoL" secondAttribute="bottom" constant="8" id="6So-k9-3pq"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="top" secondItem="S7y-GP-oAO" secondAttribute="bottom" constant="8" id="6Ti-63-WOg"/>
                             <constraint firstItem="ttm-fL-sgQ" firstAttribute="leading" secondItem="Q4x-CV-TJF" secondAttribute="trailing" constant="8" id="AVL-XC-aku"/>
                             <constraint firstItem="Q4x-CV-TJF" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="Atf-IY-H3M"/>
                             <constraint firstItem="LRd-aa-k56" firstAttribute="top" secondItem="hY8-28-T3V" secondAttribute="bottom" constant="8" id="Dj8-KP-HbZ"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="JLt-4A-olu"/>
-                            <constraint firstItem="GBd-6y-OoL" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" constant="72" id="Jg4-Bu-rMa"/>
                             <constraint firstItem="YGd-8e-h8c" firstAttribute="top" secondItem="ttm-fL-sgQ" secondAttribute="bottom" constant="8" id="K1O-y9-PGS"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="LqD-kt-RPq"/>
                             <constraint firstItem="hY8-28-T3V" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="O8Z-KL-Tn6"/>
                             <constraint firstItem="Byk-Z5-beJ" firstAttribute="top" secondItem="gfb-m4-hbV" secondAttribute="bottom" constant="20" id="Q0F-Nq-hv8"/>
                             <constraint firstItem="gfb-m4-hbV" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="S7u-sD-q7I"/>
-                            <constraint firstItem="GBd-6y-OoL" firstAttribute="top" secondItem="YGd-8e-h8c" secondAttribute="bottom" constant="8" id="SYQ-wP-gxA"/>
+                            <constraint firstItem="GBd-6y-OoL" firstAttribute="centerX" secondItem="9m4-KN-2fu" secondAttribute="centerX" id="VHf-MF-KbS"/>
+                            <constraint firstItem="GBd-6y-OoL" firstAttribute="top" secondItem="YGd-8e-h8c" secondAttribute="bottom" constant="8" id="Vl9-NO-EBl"/>
                             <constraint firstItem="UIv-bY-OPt" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="Wbh-hd-8fZ"/>
                             <constraint firstAttribute="trailing" secondItem="SPK-7D-qXR" secondAttribute="trailing" id="Wmv-0v-B3A"/>
-                            <constraint firstItem="hY8-28-T3V" firstAttribute="top" secondItem="GBd-6y-OoL" secondAttribute="bottom" constant="8" id="XVm-ri-2d3"/>
                             <constraint firstItem="YQY-dA-XFn" firstAttribute="top" secondItem="Bue-Lq-Co8" secondAttribute="bottom" constant="8" id="Yl4-3q-Ktc"/>
                             <constraint firstItem="YQY-dA-XFn" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="ZYr-KF-C9c"/>
                             <constraint firstItem="YGd-8e-h8c" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="dRE-Gz-5fS"/>
@@ -190,16 +193,16 @@
                             <constraint firstItem="ttm-fL-sgQ" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="twD-83-A4a"/>
                             <constraint firstItem="ttm-fL-sgQ" firstAttribute="top" secondItem="YQY-dA-XFn" secondAttribute="bottom" constant="8" id="vP5-Ug-ZlN"/>
                             <constraint firstItem="SPK-7D-qXR" firstAttribute="top" secondItem="9m4-KN-2fu" secondAttribute="top" id="wux-k0-ooJ"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="GBd-6y-OoL" secondAttribute="trailing" constant="79" id="xD9-lP-Hw0"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="characterPicker" destination="hY8-28-T3V" id="3i2-Gu-6mL"/>
+                        <outlet property="personalityLabel" destination="GBd-6y-OoL" id="p5H-Qi-a6Q"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gFB-vc-W8f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="886" y="137"/>
+            <point key="canvasLocation" x="885.60000000000002" y="136.28185907046478"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="fK3-MB-imF">
