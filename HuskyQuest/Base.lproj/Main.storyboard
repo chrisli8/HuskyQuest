@@ -424,9 +424,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.2274509804" green="0.10980392160000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.9137254901960784" green="0.82745098039215681" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.2274509804" green="0.10980392160000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -642,9 +642,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.2274509804" green="0.10980392160000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.91372549020000005" green="0.82745098039999998" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                         <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            <color key="textColor" red="0.22745098039215686" green="0.10980392156862745" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
                         </textAttributes>
                     </navigationBar>
                     <connections>
@@ -661,9 +661,9 @@
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0xl-Sp-eRf"/>
-        <segue reference="eRF-3U-cIY"/>
+        <segue reference="qZq-DF-oax"/>
         <segue reference="WvE-YD-FlJ"/>
+        <segue reference="eRF-3U-cIY"/>
         <segue reference="abf-fy-Njd"/>
     </inferredMetricsTieBreakers>
 </document>
