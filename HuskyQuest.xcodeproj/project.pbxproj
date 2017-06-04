@@ -17,6 +17,7 @@
 		971A691E1ED514F2002FCAD3 /* HuskyQuestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A691D1ED514F2002FCAD3 /* HuskyQuestTests.swift */; };
 		971A69291ED514F2002FCAD3 /* HuskyQuestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */; };
 		97390D621EE4ACD500DF5967 /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97390D611EE4ACD500DF5967 /* AppData.swift */; };
+		9748956F1EE4BDB20051D72E /* CharacterSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9748956E1EE4BDB20051D72E /* CharacterSummaryViewController.swift */; };
 		976ADCD31EE21CFD007785F4 /* CharacterCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */; };
 		976ADCD51EE22291007785F4 /* PersonalityData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976ADCD41EE22291007785F4 /* PersonalityData.swift */; };
 /* End PBXBuildFile section */
@@ -56,6 +57,7 @@
 		971A69281ED514F2002FCAD3 /* HuskyQuestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HuskyQuestUITests.swift; sourceTree = "<group>"; };
 		971A692A1ED514F2002FCAD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		97390D611EE4ACD500DF5967 /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
+		9748956E1EE4BDB20051D72E /* CharacterSummaryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterSummaryViewController.swift; sourceTree = "<group>"; };
 		976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterCreationViewController.swift; sourceTree = "<group>"; };
 		976ADCD41EE22291007785F4 /* PersonalityData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonalityData.swift; sourceTree = "<group>"; };
 		BAD891A73D59E2FDBC7BADC4 /* Pods_HuskyQuestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +126,7 @@
 				971A69141ED514F2002FCAD3 /* Info.plist */,
 				976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */,
 				97390D611EE4ACD500DF5967 /* AppData.swift */,
+				9748956E1EE4BDB20051D72E /* CharacterSummaryViewController.swift */,
 			);
 			path = HuskyQuest;
 			sourceTree = "<group>";
@@ -352,6 +355,7 @@
 			files = (
 				49A629381EE1129D00108557 /* StoryViewController.swift in Sources */,
 				976ADCD51EE22291007785F4 /* PersonalityData.swift in Sources */,
+				9748956F1EE4BDB20051D72E /* CharacterSummaryViewController.swift in Sources */,
 				976ADCD31EE21CFD007785F4 /* CharacterCreationViewController.swift in Sources */,
 				971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */,
 				971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */,

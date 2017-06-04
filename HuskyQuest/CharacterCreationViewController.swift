@@ -30,6 +30,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         super.viewDidLoad()
         characterPicker.delegate = self;
         characterPicker.dataSource = self;
+        loadPastData();
         // Do any additional setup after loading the view.
     }
     
@@ -48,6 +49,60 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         if let gestures = (self.view.gestureRecognizers) {
             for gesture in gestures {
                 self.view.removeGestureRecognizer(gesture)
+            }
+        }
+    }
+    
+    // MARK: - Helper Methods
+    
+    // if the map has data, populate the fields with those values so users can
+    // have persiting data when they want to go back
+    func loadPastData() {
+        if AppData.shared.personalDescription["Name"] != "" {
+            nameLabel.text = AppData.shared.personalDescription["Name"]
+        }
+        if AppData.shared.personalDescription["Gender"] != "" {
+            genderLabel.text = AppData.shared.personalDescription["Gender"]
+        }
+        if AppData.shared.personalDescription["Age"] != "" {
+            ageLabel.text = AppData.shared.personalDescription["Age"]
+        }
+        if AppData.shared.personalDescription["Ethnicity"] != "" {
+            ethnicityLabel.text = AppData.shared.personalDescription["Ethnicity"]
+        }
+    }
+    
+    // Sets stats based on personality type
+    func setStats(personality: String) {
+        if personality != "" {
+            // Analysts
+            if personality == "INTJ" || personality == "INTP" ||
+                personality == "ENTJ" || personality == "ENTP" {
+                AppData.shared.stats["Creativity"] = 10
+                AppData.shared.stats["Diligence"] = 15
+                AppData.shared.stats["Understanding"] = 15
+                AppData.shared.stats["Charisma"] = 0
+                // Diplomats
+            } else if personality == "INFJ" || personality == "INFP" ||
+                personality == "ENFJ" || personality == "ENFP" {
+                AppData.shared.stats["Creativity"] = 15
+                AppData.shared.stats["Diligence"] = 0
+                AppData.shared.stats["Understanding"] = 10
+                AppData.shared.stats["Charisma"] = 15
+                // Sentinels
+            } else if personality == "ISTJ" || personality == "ISFJ" ||
+                personality == "ESTJ" || personality == "ESFJ" {
+                AppData.shared.stats["Creativity"] = 0
+                AppData.shared.stats["Diligence"] = 15
+                AppData.shared.stats["Understanding"] = 15
+                AppData.shared.stats["Charisma"] = 10
+                // Explorers
+            } else if personality == "ISTP" || personality == "ISFP" ||
+                personality == "ESTP" || personality == "ESFP" {
+                AppData.shared.stats["Creativity"] = 15
+                AppData.shared.stats["Diligence"] = 10
+                AppData.shared.stats["Understanding"] = 0
+                AppData.shared.stats["Charisma"] = 15
             }
         }
     }
@@ -112,15 +167,17 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     // MARK: - Segue
     
+    // sets data to singleton when progressing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         AppData.shared.personalDescription["Name"] = nameLabel.text
         AppData.shared.personalDescription["Gender"] = genderLabel.text
         AppData.shared.personalDescription["Age"] = ageLabel.text
         AppData.shared.personalDescription["Ethnicity"] = ethnicityLabel.text
         AppData.shared.personalDescription["Personality"] = personalityLabel.text
+        setStats(personality: AppData.shared.personalDescription["Personality"]!)
     }
     
-    // prevents user from progressing if they haven't set a
+    // prevents user from progressing if they haven't set their name, gender, age, ethnicity
     override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
         if identifier == "toCreateSummary" && (nameLabel.text!.isEmpty || genderLabel.text!.isEmpty || ageLabel.text!.isEmpty || ethnicityLabel.text!.isEmpty) {
             

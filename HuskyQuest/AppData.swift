@@ -11,12 +11,21 @@ import UIKit
 class AppData: NSObject {
     static let shared = AppData()
     
+    // Data that doesn't affect the game
     var personalDescription: [String: String] = [
         "Name" : "",
         "Gender" : "",
         "Age" : "",
         "Ethnicity": "",
         "Personality": ""
+    ]
+    
+    // Statistics for character
+    var stats: [String: Int] = [
+        "Diligence": 0,
+        "Creativity": 0,
+        "Understanding": 0,
+        "Charisma": 0
     ]
     
     // Map of personality labels to their descriptions
