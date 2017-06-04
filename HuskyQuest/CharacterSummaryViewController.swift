@@ -19,11 +19,18 @@ class CharacterSummaryViewController: UIViewController {
     @IBOutlet weak var progressUnderstanding: UIProgressView!
     @IBOutlet weak var progressCharisma: UIProgressView!
     
+    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnNext: UIButton!
     // 0-25 for each stat value
     // 30-40 stating stats total
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if AppData.shared.characterCreated {
+            btnBack.isHidden = true
+            btnNext.isHidden = true
+        }
         
         // Set data
         nameLabel.text = AppData.shared.personalDescription["Name"]
@@ -46,6 +53,12 @@ class CharacterSummaryViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    // MARK: - Actions
+    
+    // set's character created as true when next button is pres
+    @IBAction func onNextPressed(_ sender: Any) {
+        AppData.shared.characterCreated = true
+    }
     // MARK: - Helper Methods
     
     

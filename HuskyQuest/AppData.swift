@@ -11,6 +11,9 @@ import UIKit
 class AppData: NSObject {
     static let shared = AppData()
     
+    // To check if character has been created
+    var characterCreated = false
+    
     // Data that doesn't affect the game
     var personalDescription: [String: String] = [
         "Name" : "",
