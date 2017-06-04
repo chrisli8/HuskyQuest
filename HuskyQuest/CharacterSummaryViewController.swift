@@ -38,7 +38,11 @@ class CharacterSummaryViewController: UIViewController {
         ageLabel.text = AppData.shared.personalDescription["Age"]
         ethnicityLabel.text = AppData.shared.personalDescription["Ethnicity"]
         
-        print(AppData.shared.stats)
+        // For animation
+        progressDiligence.setProgress(Float(0), animated: true)
+        progressCreativity.setProgress(Float(0), animated: true)
+        progressUnderstanding.setProgress(Float(0), animated: true)
+        progressCharisma.setProgress(Float(0), animated: true)
         
         // Set Stats
         progressDiligence.setProgress(Float(AppData.shared.stats["Diligence"]!) / 25.0, animated: true)

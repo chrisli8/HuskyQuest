@@ -420,9 +420,14 @@
         <scene sceneID="KJU-2n-Vi0">
             <objects>
                 <navigationController id="7A6-6W-bJx" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ITD-pQ-xW2">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ITD-pQ-xW2">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2274509804" green="0.10980392160000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="LTd-uc-G38" kind="relationship" relationship="rootViewController" id="w2v-hZ-dG9"/>
@@ -633,9 +638,14 @@
         <scene sceneID="52E-65-Apw">
             <objects>
                 <navigationController id="EZN-70-RI6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="kJ8-e4-GsV">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="kJ8-e4-GsV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.2274509804" green="0.10980392160000001" blue="0.43921568630000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </textAttributes>
                     </navigationBar>
                     <connections>
                         <segue destination="iHX-DZ-ERZ" kind="relationship" relationship="rootViewController" id="0xl-Sp-eRf"/>
