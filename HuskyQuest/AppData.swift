@@ -11,6 +11,15 @@ import UIKit
 class AppData: NSObject {
     static let shared = AppData()
     
+    var personalDescription: [String: String] = [
+        "Name" : "",
+        "Gender" : "",
+        "Age" : "",
+        "Ethnicity": "",
+        "Personality": ""
+    ]
+    
+    // Map of personality labels to their descriptions
     let personalityMap: [String: String] = [
         // Analysts
         "INTJ" : "Imaginative and strategic thinkers, with a plan for everything.",

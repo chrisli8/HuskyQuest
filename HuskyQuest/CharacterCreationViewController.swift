@@ -15,6 +15,14 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     @IBOutlet weak var personalityDescription: UITextView!
     
+    @IBOutlet weak var nameLabel: UITextField!
+    
+    @IBOutlet weak var genderLabel: UITextField!
+    
+    @IBOutlet weak var ageLabel: UITextField!
+    
+    @IBOutlet weak var ethnicityLabel: UITextField!
+    
     // Data source based on personality test
     var pickerDataSource = [["Introversion", "Extraversion"], ["Intuition", "Sensing"], ["Thinking", "Feeling"], ["Judging", "Perceiving"]];
     
@@ -100,6 +108,43 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         
         return label
         
+    }
+    
+    // MARK: - Segue
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        AppData.shared.personalDescription["Name"] = nameLabel.text
+        AppData.shared.personalDescription["Gender"] = genderLabel.text
+        AppData.shared.personalDescription["Age"] = ageLabel.text
+        AppData.shared.personalDescription["Ethnicity"] = ethnicityLabel.text
+        AppData.shared.personalDescription["Personality"] = personalityLabel.text
+    }
+    
+    // prevents user from progressing if they haven't set a
+    override func shouldPerformSegue(withIdentifier identifier: String?, sender: Any?) -> Bool {
+        if identifier == "toCreateSummary" && (nameLabel.text!.isEmpty || genderLabel.text!.isEmpty || ageLabel.text!.isEmpty || ethnicityLabel.text!.isEmpty) {
+            
+            // Put up alert dialog
+            let alertController = UIAlertController(title: "Incomplete Data", message: "Tell us about yourself", preferredStyle: .alert)
+            
+            let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { action in
+                // ...
+            }
+            alertController.addAction(cancelAction)
+            
+            // Other code for "ok"
+//            let OKAction = UIAlertAction(title: "OK", style: .default) { action in
+//                // ...
+//            }
+//            alertController.addAction(OKAction)
+//            
+            self.present(alertController, animated: true) {
+                // ...
+            }
+            
+            return false
+        }
+        return true
     }
 
     /*

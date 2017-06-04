@@ -107,7 +107,7 @@
                                 <rect key="frame" x="327" y="617" width="32" height="30"/>
                                 <state key="normal" title="Next"/>
                                 <connections>
-                                    <segue destination="nm6-gc-Nm9" kind="show" id="4XH-j0-A0k"/>
+                                    <segue destination="nm6-gc-Nm9" kind="show" identifier="toCreateSummary" id="4XH-j0-A0k"/>
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YQY-dA-XFn">
@@ -195,7 +195,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ageLabel" destination="ttm-fL-sgQ" id="xcJ-nI-KTd"/>
                         <outlet property="characterPicker" destination="hY8-28-T3V" id="3i2-Gu-6mL"/>
+                        <outlet property="ethnicityLabel" destination="YGd-8e-h8c" id="FGf-Kf-ScH"/>
+                        <outlet property="genderLabel" destination="Q4x-CV-TJF" id="HlF-OO-xHG"/>
+                        <outlet property="nameLabel" destination="YQY-dA-XFn" id="jhV-ck-c2b"/>
                         <outlet property="personalityDescription" destination="LRd-aa-k56" id="Iia-8f-4dy"/>
                         <outlet property="personalityLabel" destination="GBd-6y-OoL" id="p5H-Qi-a6Q"/>
                     </connections>
