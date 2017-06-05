@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33A0206D6BBCD515FA946C7A /* Pods_HuskyQuest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7352628074B4568E7A1A5A0 /* Pods_HuskyQuest.framework */; };
 		49A629381EE1129D00108557 /* StoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A629371EE1129D00108557 /* StoryViewController.swift */; };
+		970E80981EE50B23005C6AA3 /* ScrollStoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 970E80971EE50B23005C6AA3 /* ScrollStoryViewController.swift */; };
 		971A69091ED514F2002FCAD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A69081ED514F2002FCAD3 /* AppDelegate.swift */; };
 		971A690B1ED514F2002FCAD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971A690A1ED514F2002FCAD3 /* ViewController.swift */; };
 		971A690E1ED514F2002FCAD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 971A690C1ED514F2002FCAD3 /* Main.storyboard */; };
@@ -43,6 +44,7 @@
 		49A629371EE1129D00108557 /* StoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryViewController.swift; sourceTree = "<group>"; };
 		5BA9890378F8AE16C20533F6 /* Pods_HuskyQuestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HuskyQuestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		93D4806C6B8198181323CAF0 /* Pods-HuskyQuest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HuskyQuest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HuskyQuest/Pods-HuskyQuest.debug.xcconfig"; sourceTree = "<group>"; };
+		970E80971EE50B23005C6AA3 /* ScrollStoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollStoryViewController.swift; sourceTree = "<group>"; };
 		971A69051ED514F2002FCAD3 /* HuskyQuest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HuskyQuest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		971A69081ED514F2002FCAD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		971A690A1ED514F2002FCAD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +129,7 @@
 				976ADCD21EE21CFD007785F4 /* CharacterCreationViewController.swift */,
 				97390D611EE4ACD500DF5967 /* AppData.swift */,
 				9748956E1EE4BDB20051D72E /* CharacterSummaryViewController.swift */,
+				970E80971EE50B23005C6AA3 /* ScrollStoryViewController.swift */,
 			);
 			path = HuskyQuest;
 			sourceTree = "<group>";
@@ -354,6 +357,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A629381EE1129D00108557 /* StoryViewController.swift in Sources */,
+				970E80981EE50B23005C6AA3 /* ScrollStoryViewController.swift in Sources */,
 				976ADCD51EE22291007785F4 /* PersonalityData.swift in Sources */,
 				9748956F1EE4BDB20051D72E /* CharacterSummaryViewController.swift in Sources */,
 				976ADCD31EE21CFD007785F4 /* CharacterCreationViewController.swift in Sources */,

@@ -101,6 +101,7 @@ class StoryViewController: UIViewController {
     }
     
     func turnPage(){
+        // Set Text Box to
         
         //Updates story text box and hides/unhides choices based on existence
         StoryTextBox.text = currTree[bookmarkIndex[currTreeName]!]["text"] as! String
