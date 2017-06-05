@@ -7,9 +7,22 @@
 //
 
 import UIKit
+import Alamofire
 
 class AppData: NSObject {
     static let shared = AppData()
+    
+    var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
+    var jsonArray:[[String:Any]] = []
+    var currTree:[[String:Any]] = []
+    var history = ""
+    
+    //Bookmark storage for jumping between trees in the story
+    var bookmarkIndex = [
+    "main" : 0,
+    "filler" : 0,
+    "subtreenamehere" : 0
+    ]
     
     // To check if character has been created
     var characterCreated = false
@@ -25,6 +38,8 @@ class AppData: NSObject {
     
     // Statistics for character
     var stats: [String: Int] = [
+        "RR": 5, //Roommate relationship CHANGE in JSON
+        "H" : 10, //Health CHANGE IN JSON
         "Diligence": 0,
         "Creativity": 0,
         "Understanding": 0,
@@ -60,6 +75,30 @@ class AppData: NSObject {
     
     override init(){
         super.init()
+        
+        let destination: DownloadRequest.DownloadFileDestination = {_, _ in
+            
+            let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
+            let fileURL = documentsURL.appendingPathComponent("story.json")
+            
+            return(fileURL, [.removePreviousFile, .createIntermediateDirectories])
+        }
+        Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
+            
+            print(response.result)
+            let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
+            
+            if content != nil{
+                do{
+                    self.jsonArray = try JSONSerialization.jsonObject(with: content! as Data, options: []) as! [[String:Any]]
+                } catch {
+                    print("ERROR ERROR FILE NOT FOUND")
+                }
+            }
+            
+            print(self.jsonArray[1]["tree"]!)
+            self.currTree = self.jsonArray[1]["tree"] as! [[String:Any]]
+        }
     }
     
 }
