@@ -86,8 +86,7 @@
         {
             "page" : 2,
             "type":"result",
-            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that are some weird black spots
-            		 between the bed and the wall",
+            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that are some weird black spots between the bed and the wall",
             "choices":[
                 {"title":"Continue","page":5, "decrease": "H", "increase":"RR"}
             ]
@@ -112,8 +111,7 @@
         {
             "page" : 5,
             "type":"choice",
-            "text":"You finished unpacking and you're content with your room. Your friends text you that they just finished moving in and they want to explore Seattle. 
-            		Your roommate mentions feeling a bit hungry.",
+            "text":"You finished unpacking and you're content with your room. Your friends text you that they just finished moving in and they want to explore Seattle. Your roommate mentions feeling a bit hungry.",
             "choices":[
                 {"title":"Get dinner with roommate","page":6},
                 {"title":"Go hang out with friends","page":7},
@@ -132,18 +130,15 @@
         {
             "page" : 8,
             "type" : "result",
-            "text" : "You roommate is thrilled to be included and joins you and your friends. After dinner, you guys head down to gas works and chill for a bit. You realize 
-            		that some of your friends already know your roommate, creating tighter connections. You discover that you have classes with some of your friends, 
-            		as well as your roommate!",
+            "text" : "You roommate is thrilled to be included and joins you and your friends. After dinner, you guys head down to gas works and chill for a bit. You realize that some of your friends already know your roommate, creating tighter connections. You discover that you have classes with some of your friends, as well as your roommate!",
             "choices":[
                 {"title":"Continue", "page":12}
             ]
-        }
+        },
         {
             "page" :9,
             "type" : "result",
-            "text" : "You've just come back from the party with your roommate and their friends. You really enjoyed it and made a lot of new friends. 
-            		You can't wait to start classes and see them in your classes.",
+            "text" : "You've just come back from the party with your roommate and their friends. You really enjoyed it and made a lot of new friends. You can't wait to start classes and see them in your classes.",
             "choices":[
                 {"title":"Continue", "page":12,  "FRED stats": "something about better roommate relationship, networking, but lower academic success"}
             ]
@@ -183,8 +178,7 @@
         {
             "page" : 13,
             "type" : "story",
-            "text" : "Unfortunately, you have performed below average on your finals. It looks like you've spent too much time out with friends and 
-                    too little studying. ",
+            "text" : "Unfortunately, you have performed below average on your finals. It looks like you've spent too much time out with friends and too little studying. ",
             "choices":[
                 {"title":"Continue", "page":-1}
             ]
