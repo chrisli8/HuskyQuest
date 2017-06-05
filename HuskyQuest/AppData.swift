@@ -33,7 +33,7 @@ class AppData: NSObject {
     ]
     
     // To get character's major
-    var characterMajor = ""
+    var characterMajor = "CSE" // Defaults to CSE in case the user doesn't choose
     
     // To check if character has been created
     var characterCreated = false
