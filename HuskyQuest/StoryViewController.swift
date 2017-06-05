@@ -35,7 +35,7 @@ class StoryViewController: UIViewController {
         } else {
             pickedChoice = self.choices[2]
         }
-        data.history = "\(data.history) You chose \(pickedChoice["title"] as! String)."
+        data.history = "\(data.history) You chose \(pickedChoice["title"] as! String)"
         //StatChanges
         if pickedChoice["increase"] != nil {
             var currentStat = data.stats[pickedChoice["increase"] as! String]!

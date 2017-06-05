@@ -644,6 +644,9 @@
                                         <state key="normal" title="Setting">
                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="J81-Jq-wNc" kind="show" id="kAo-0c-qaC"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -660,6 +663,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYT-3t-J02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2465" y="137"/>
+        </scene>
+        <!--Settings View Controller-->
+        <scene sceneID="xNI-a3-1Bd">
+            <objects>
+                <viewController id="J81-Jq-wNc" customClass="SettingsViewController" customModule="HuskyQuest" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="i1u-32-QLE"/>
+                        <viewControllerLayoutGuide type="bottom" id="Y5h-Lb-Hzi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="WY1-GV-MBN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WFc-VP-yiZ">
+                                <rect key="frame" x="164" y="248" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Update Data"/>
+                                <connections>
+                                    <action selector="UpdateClick:" destination="J81-Jq-wNc" eventType="touchUpInside" id="ck3-3d-1XY"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="updateButton" destination="WFc-VP-yiZ" id="Sbr-Ff-HMQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i2N-J2-khT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3668" y="167"/>
         </scene>
     </scenes>
     <resources>

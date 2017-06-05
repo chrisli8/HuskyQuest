@@ -22,7 +22,7 @@ class CharacterSummaryViewController: UIViewController {
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     // 0-25 for each stat value
-    // 30-40 stating stats total
+    // 30-40 stating total stats total
     
     override func viewDidLoad() {
         super.viewDidLoad()
