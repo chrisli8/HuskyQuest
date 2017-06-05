@@ -17,7 +17,7 @@ class HistoryViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if historyData != ""{
+        if historyData != "" {
             textBox.text = historyData
         } else {
             textBox.text = "Nothing has occurred in the story"
@@ -28,7 +28,7 @@ class HistoryViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewDidAppear(true)
         historyData = AppData.shared.history
-        if historyData != ""{
+        if historyData != "" {
             textBox.text = historyData
         } else {
             textBox.text = "Nothing has occurred in the story"
