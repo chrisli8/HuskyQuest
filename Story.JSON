@@ -175,9 +175,9 @@
         {
             "page" : 12,
             "type" : "story",
-            "text" : "Finals week is upon you. Let's see how you've performed thorughout the quarter.",
+            "text" : "Finals week is upon you. Let's see how you've performed throughout the quarter.",
             "choices":[
-                {"title":"Testing stats .."}
+                {"title":"Take finals", "page": 14}
             ]
         },
         {
