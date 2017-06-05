@@ -35,7 +35,7 @@ class StoryViewController: UIViewController {
         } else {
             pickedChoice = self.choices[2]
         }
-        
+        data.history = "\(data.history) You chose \(pickedChoice["title"] as! String)."
         //StatChanges
         if pickedChoice["increase"] != nil {
             var currentStat = data.stats[pickedChoice["increase"] as! String]!
@@ -54,7 +54,7 @@ class StoryViewController: UIViewController {
         }
         //updates index on the tree based off the attribute attached the choice
         if "\(String(describing: pickedChoice["response"]))" != "current" {
-            data.bookmarkIndex[currTreeName] = pickedChoice["response"] as? Int
+            data.bookmarkIndex[currTreeName] = pickedChoice["response"] as! Int
         }
         
         turnPage()
@@ -65,6 +65,7 @@ class StoryViewController: UIViewController {
         
         //Updates story text box and hides/unhides choices based on existence
         StoryTextBox.text = data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String
+        data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String). "
         self.choices = data.currTree[data.bookmarkIndex[currTreeName]!]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
         self.Choice2Button.isHidden = true

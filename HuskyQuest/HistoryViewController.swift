@@ -24,6 +24,17 @@ class HistoryViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        historyData = AppData.shared.history
+        if historyData != ""{
+            textBox.text = historyData
+        } else {
+            textBox.text = "Nothing has occurred in the story"
+        }
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

@@ -85,9 +85,7 @@ class AppData: NSObject {
             return(fileURL, [.createIntermediateDirectories])
         }
         
-        //downloads and replaces the current story.json file
-        
-        
+        //downloads and and loads json file
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
             print(response.result)
             self.loadJSON()
