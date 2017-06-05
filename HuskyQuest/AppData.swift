@@ -95,12 +95,13 @@ class AppData: NSObject {
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent("story.json")
             
-            return(fileURL, [.createIntermediateDirectories])
+            return(fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         
         //downloads and and loads json file
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
             print(response.result)
+            debugPrint(response)
             self.loadJSON()
             if self.currTree.count == 0 {
                 self.currTree = self.jsonArray[1]["tree" ] as! [[String : Any]]
@@ -120,8 +121,6 @@ class AppData: NSObject {
                 print("ERROR ERROR FILE NOT FOUND")
             }
         }
-        self.currTree = self.jsonArray[1]["tree"] as! [[String:Any]]
-        
     }
     
     
