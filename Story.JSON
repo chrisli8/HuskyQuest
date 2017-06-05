@@ -128,6 +128,14 @@
             ]
         },
         {
+            "page" : 7,
+            "type" : "result",
+            "text" : "Your roommate feels a little rejected but cheerfully tells you to have fun. You go out and explore Seattle with your group of friends.",
+            "choices":[
+                {"title":"Continue", "page":12, "FRED stats": "something"}
+            ]
+        },
+        {
             "page" : 8,
             "type" : "result",
             "text" : "You roommate is thrilled to be included and joins you and your friends. After dinner, you guys head down to gas works and chill for a bit. You realize that some of your friends already know your roommate, creating tighter connections. You discover that you have classes with some of your friends, as well as your roommate!",
@@ -157,14 +165,6 @@
             "text" : "You build your social connections and feel like you have a solid set of friends to go for study help.",
             "choices":[
                 {"Continue":"", "page":0}
-            ]
-        },
-        {
-            "page" : 7,
-            "type" : "result",
-            "text" : "Your roommate feels a little rejected but cheerfully tells you to have fun. You go out and explore Seattle with your group of friends.",
-            "choices":[
-                {"title":"Continue", "page":12, "FRED stats": "something"}
             ]
         },
         {
@@ -200,7 +200,7 @@
             ]
         },
         {
-            "page" : 0,
+            "page" : -2,
             "type" : "",
             "text" : "",
             "choices":[
