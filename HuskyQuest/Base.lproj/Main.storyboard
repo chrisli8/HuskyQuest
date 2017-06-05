@@ -19,14 +19,14 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="FrontScreen" translatesAutoresizingMaskIntoConstraints="NO" id="44I-Lk-cRw">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YGz-yL-Vx9">
-                                <rect key="frame" x="80" y="441" width="215" height="40"/>
+                                <rect key="frame" x="80" y="505" width="215" height="40"/>
                                 <color key="backgroundColor" red="0.90980392156862744" green="0.82745098039215681" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="UHw-Xd-YPB"/>
@@ -40,7 +40,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eU6-IU-Ww6">
-                                <rect key="frame" x="80" y="385" width="215" height="40"/>
+                                <rect key="frame" x="80" y="449" width="215" height="40"/>
                                 <color key="backgroundColor" red="0.90980392160000001" green="0.82745098039999998" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="L27-xs-XL5"/>
@@ -658,36 +658,14 @@
             </objects>
             <point key="canvasLocation" x="2465" y="137"/>
         </scene>
-        <!--Navigation Controller-->
-        <scene sceneID="52E-65-Apw">
-            <objects>
-                <navigationController id="EZN-70-RI6" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="kJ8-e4-GsV">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.91372549020000005" green="0.82745098039999998" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.22745098039215686" green="0.10980392156862745" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
-                    </navigationBar>
-                    <connections>
-                        <segue destination="iHX-DZ-ERZ" kind="relationship" relationship="rootViewController" id="0xl-Sp-eRf"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fEm-Vt-o4H" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3188" y="135"/>
-        </scene>
     </scenes>
     <resources>
         <image name="CharacterScreen" width="187" height="333"/>
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0xl-Sp-eRf"/>
-        <segue reference="eRF-3U-cIY"/>
         <segue reference="WvE-YD-FlJ"/>
+        <segue reference="eRF-3U-cIY"/>
         <segue reference="abf-fy-Njd"/>
     </inferredMetricsTieBreakers>
 </document>
