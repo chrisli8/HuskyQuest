@@ -86,7 +86,7 @@
         {
             "page" : 2,
             "type":"result",
-            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that theres some kind of weird black spots
+            "text":"You begin unpacking your things on to the right side of the room. You notice afterwards that are some weird black spots
             		 between the bed and the wall",
             "choices":[
                 {"title":"Continue","page":5, "decrease": "H", "increase":"RR"}
@@ -145,7 +145,7 @@
             "text" : "You've just come back from the party with your roommate and their friends. You really enjoyed it and made a lot of new friends. 
             		You can't wait to start classes and see them in your classes.",
             "choices":[
-                {"title":"Continue", "page":11,  "FRED stats": "something about better roommate relationship, networking, but lower academic success"}
+                {"title":"Continue", "page":12,  "FRED stats": "something about better roommate relationship, networking, but lower academic success"}
             ]
         },
         {
@@ -161,7 +161,7 @@
             "type" : "story",
             "text" : "You build your social connections and feel like you have a solid set of friends to go for study help.",
             "choices":[
-                {"Continue":"", "page":12}
+                {"Continue":"", "page":0}
             ]
         },
         {
@@ -169,13 +169,38 @@
             "type" : "result",
             "text" : "Your roommate feels a little rejected but cheerfully tells you to have fun. You go out and explore Seattle with your group of friends.",
             "choices":[
-                {"title":"Continue", "page":11, "FRED stats": "something about decrease in roommate relationship, increase in socialness, something something”}
+                {"title":"Continue", "page":12, "FRED stats": "something"}
             ]
         },
         {
             "page" : 12,
             "type" : "story",
-            "text" : "It's your first day of classes .......",
+            "text" : "Finals week is upon you. Let's see how you've performed thorughout the quarter.",
+            "choices":[
+                {"title":"Testing stats .."}
+            ]
+        },
+        {
+            "page" : 13,
+            "type" : "story",
+            "text" : "Unfortunately, you have performed below average on your finals. It looks like you've spent too much time out with friends and 
+                    too little studying. ",
+            "choices":[
+                {"title":"Continue", "page":-1}
+            ]
+        },
+        {
+            "page" : 14,
+            "type" : "story",
+            "text" : "Congratulations! You've performed well on your finals and are well on your way to getting into the technical major of your choice!",
+            "choices":[
+                {"title":"Continue", "page":-1}
+            ]
+        },
+        {
+            "page" : -1,
+            "type" : "story",
+            "text" : "To be continued ..",
             "choices":[
                 {"title":"", "page":0}
             ]
