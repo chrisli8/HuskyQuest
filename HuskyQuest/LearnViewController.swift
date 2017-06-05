@@ -26,6 +26,7 @@ class LearnViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         experienceLabel.text = String(data.experience)
+        data.experience = data.experience + 1 // Counters update tick
         updateExperience()
         updateProgress()
     }
