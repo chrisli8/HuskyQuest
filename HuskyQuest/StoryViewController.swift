@@ -42,6 +42,7 @@ class StoryViewController: UIViewController {
     }
     
     func timerReset(){
+        timer.invalidate()
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
         progressBarTimer.invalidate()
         progressBarTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true);
@@ -106,6 +107,7 @@ class StoryViewController: UIViewController {
         }
         timerReset()
         turnPage()
+        data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String) "
         
         
     }
@@ -119,7 +121,7 @@ class StoryViewController: UIViewController {
         
         //Updates story text box and hides/unhides choices based on existence
         StoryTextBox.text = data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String
-        data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String) "
+        
         self.choices = data.currTree[data.bookmarkIndex[currTreeName]!]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
         self.Choice2Button.isHidden = true

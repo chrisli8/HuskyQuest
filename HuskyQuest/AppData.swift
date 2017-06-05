@@ -95,7 +95,7 @@ class AppData: NSObject {
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent("story.json")
             
-            return(fileURL, [.removePreviousFile, .createIntermediateDirectories])
+            return(fileURL, [.createIntermediateDirectories])
         }
         
         //downloads and and loads json file
