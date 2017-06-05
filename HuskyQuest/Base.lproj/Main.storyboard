@@ -824,6 +824,9 @@
                                 <state key="normal" title="+1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="diligenceUpPressed:" destination="vnh-Ec-vpO" eventType="touchUpInside" id="DgX-RU-Qqm"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qXg-s4-81g">
                                 <rect key="frame" x="329" y="151" width="30" height="30"/>
@@ -831,6 +834,9 @@
                                 <state key="normal" title="+1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="creativityUpPressed:" destination="vnh-Ec-vpO" eventType="touchUpInside" id="4f6-L8-Yh9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5hL-6M-EW0">
                                 <rect key="frame" x="329" y="223" width="30" height="30"/>
@@ -838,6 +844,9 @@
                                 <state key="normal" title="+1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="understandingUpPressed:" destination="vnh-Ec-vpO" eventType="touchUpInside" id="ucA-p6-1wG"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Experience:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e0K-KV-4u8">
                                 <rect key="frame" x="16" y="28" width="90" height="21"/>
@@ -857,6 +866,9 @@
                                 <state key="normal" title="+1">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="charismaUpPressed:" destination="vnh-Ec-vpO" eventType="touchUpInside" id="el8-Er-IVV"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
