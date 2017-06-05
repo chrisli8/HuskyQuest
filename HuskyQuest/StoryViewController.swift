@@ -22,6 +22,8 @@ class StoryViewController: UIViewController {
     
     var timer = Timer()
     var progressBarTimer = Timer()
+    var progressNum : Float = 0.0
+    var progressIncrement = Timer()
 
     @IBOutlet weak var ProgressBar: UIProgressView!
     
@@ -41,11 +43,21 @@ class StoryViewController: UIViewController {
     
     func timerReset(){
         timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
+        progressBarTimer.invalidate()
         progressBarTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true);
+        progressIncrement.invalidate()
+        progressNum = 0
+        ProgressBar.progress = 0
     }
     
     func showProgress(){
-        let _ = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
+        progressIncrement = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(self.incrementProgress), userInfo: nil, repeats: true);
+    }
+    
+    func incrementProgress(){
+        progressNum = progressNum + 0.2
+        ProgressBar.progress = progressNum
+        
     }
     func autoClick(){
         let buttonArray = [Choice1Button, Choice2Button, Choice3Button]
@@ -136,6 +148,7 @@ class StoryViewController: UIViewController {
             }
             
         }
+        
     }
     
     

@@ -9,10 +9,13 @@
 import UIKit
 import Alamofire
 
+
 class AppData: NSObject {
     static let shared = AppData()
     
     var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
+    
+    
     
     //Array holding all the data
     var jsonArray:[[String:Any]] = []
@@ -86,7 +89,6 @@ class AppData: NSObject {
     
     override init(){
         super.init()
-        
         //Loads the default file destination for the story.json file
         let destination: DownloadRequest.DownloadFileDestination = {_, _ in
             
@@ -101,6 +103,7 @@ class AppData: NSObject {
             print(response.result)
             self.loadJSON()
         }
+        
     }
     
     func loadJSON() {
@@ -117,4 +120,8 @@ class AppData: NSObject {
         
     }
     
+    
 }
+
+
+
