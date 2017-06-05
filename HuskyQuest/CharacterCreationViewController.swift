@@ -23,6 +23,8 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     @IBOutlet weak var ethnicityLabel: UITextField!
     
+    @IBOutlet weak var majorSegment: UISegmentedControl!
+    
     // Data source based on personality test
     var pickerDataSource = [["Introversion", "Extraversion"], ["Intuition", "Sensing"], ["Thinking", "Feeling"], ["Judging", "Perceiving"]];
     
@@ -163,6 +165,12 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         
         return label
         
+    }
+    
+    // MARK: - Actions
+    
+    @IBAction func onMajorChange(_ sender: UISegmentedControl) {
+        AppData.shared.characterMajor = sender.titleForSegment(at: majorSegment.selectedSegmentIndex)!
     }
     
     // MARK: - Segue

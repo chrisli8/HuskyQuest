@@ -24,6 +24,9 @@ class AppData: NSObject {
     "subtreenamehere" : 0
     ]
     
+    // To get character's major
+    var characterMajor = ""
+    
     // To check if character has been created
     var characterCreated = false
     

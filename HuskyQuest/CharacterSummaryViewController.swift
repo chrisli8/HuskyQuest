@@ -23,6 +23,8 @@ class CharacterSummaryViewController: UIViewController {
     @IBOutlet weak var btnNext: UIButton!
     // 0-25 for each stat value
     // 30-40 stating total stats total
+
+    @IBOutlet weak var majorLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -50,6 +52,8 @@ class CharacterSummaryViewController: UIViewController {
         progressUnderstanding.setProgress(Float(AppData.shared.stats["Understanding"]!) / 25.0, animated: true)
         progressCharisma.setProgress(Float(AppData.shared.stats["Charisma"]!) / 25.0, animated: true)
         
+        majorLabel.text = AppData.shared.characterMajor
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -63,6 +67,7 @@ class CharacterSummaryViewController: UIViewController {
     @IBAction func onNextPressed(_ sender: Any) {
         AppData.shared.characterCreated = true
     }
+    
     // MARK: - Helper Methods
     
     
