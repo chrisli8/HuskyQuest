@@ -76,29 +76,36 @@ class AppData: NSObject {
     override init(){
         super.init()
         
+        //Loads the default file destination for the story.json file
         let destination: DownloadRequest.DownloadFileDestination = {_, _ in
             
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent("story.json")
             
-            return(fileURL, [.removePreviousFile, .createIntermediateDirectories])
+            return(fileURL, [.createIntermediateDirectories])
         }
+        
+        //downloads and replaces the current story.json file
+        
+        
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
-            
             print(response.result)
-            let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
-            
-            if content != nil{
-                do{
-                    self.jsonArray = try JSONSerialization.jsonObject(with: content! as Data, options: []) as! [[String:Any]]
-                } catch {
-                    print("ERROR ERROR FILE NOT FOUND")
-                }
-            }
-            
-            print(self.jsonArray[1]["tree"]!)
-            self.currTree = self.jsonArray[1]["tree"] as! [[String:Any]]
+            self.loadJSON()
         }
+    }
+    
+    func loadJSON() {
+        let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
+        
+        if content != nil{
+            do{
+                self.jsonArray = try JSONSerialization.jsonObject(with: content! as Data, options: []) as! [[String:Any]]
+            } catch {
+                print("ERROR ERROR FILE NOT FOUND")
+            }
+        }
+        self.currTree = self.jsonArray[1]["tree"] as! [[String:Any]]
+        
     }
     
 }
