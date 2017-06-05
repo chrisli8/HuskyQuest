@@ -31,15 +31,15 @@ class ViewController: UIViewController {
         // Load previously created character
         // else disable button
         
-        data.characterCreated = true;
-        data.personalDescription["Name"] = "Default"
-        data.personalDescription["Gender"] = "Default"
-        data.personalDescription["Age"] = "Default"
-        data.personalDescription["Ethnicity"] = "Default"
-        
-        for (key, _) in data.stats {
-            data.stats[key] = 10
-        }
+//        data.characterCreated = true;
+//        data.personalDescription["Name"] = "Default"
+//        data.personalDescription["Gender"] = "Default"
+//        data.personalDescription["Age"] = "Default"
+//        data.personalDescription["Ethnicity"] = "Default"
+//        
+//        for (key, _) in data.stats {
+//            data.stats[key] = 10
+//        }
     }
 
 }
