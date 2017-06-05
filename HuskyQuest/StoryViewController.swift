@@ -101,8 +101,8 @@ class StoryViewController: UIViewController {
             currTreeName = pickedChoice["changeTree"] as! String
         }
         //updates index on the tree based off the attribute attached the choice
-        if "\(String(describing: pickedChoice["response"]))" != "current" {
-            data.bookmarkIndex[currTreeName] = pickedChoice["response"] as! Int
+        if "\(String(describing: pickedChoice["page"]))" != "current" {
+            data.bookmarkIndex[currTreeName] = pickedChoice["page"] as! Int
         }
         timerReset()
         turnPage()

@@ -102,8 +102,12 @@ class AppData: NSObject {
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
             print(response.result)
             self.loadJSON()
+            if self.currTree.count == 0 {
+                self.currTree = self.jsonArray[1]["tree" ] as! [[String : Any]]
+            }
         }
         
+
     }
     
     func loadJSON() {
