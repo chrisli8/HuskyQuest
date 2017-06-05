@@ -16,12 +16,6 @@ class HistoryViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if historyData != "" {
-            textBox.text = historyData
-        } else {
-            textBox.text = "Nothing has occurred in the story"
-        }
         // Do any additional setup after loading the view.
     }
     
@@ -33,6 +27,7 @@ class HistoryViewController: UIViewController {
         } else {
             textBox.text = "Nothing has occurred in the story"
         }
+        
         
     }
 

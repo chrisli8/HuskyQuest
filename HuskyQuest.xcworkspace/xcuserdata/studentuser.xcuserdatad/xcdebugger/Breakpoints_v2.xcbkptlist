@@ -179,11 +179,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518388457.667898"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "StoryViewController"
+            landmarkType = "3">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuskyQuest/StoryViewController.swift"
+            timestampString = "518389905.730823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
          </BreakpointContent>
@@ -195,27 +211,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "24"
-            endingLineNumber = "24"
-            landmarkName = "viewDidLoad()"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "57"
-            endingLineNumber = "57"
+            startingLineNumber = "83"
+            endingLineNumber = "83"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -227,11 +227,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "58"
-            endingLineNumber = "58"
+            startingLineNumber = "84"
+            endingLineNumber = "84"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -243,11 +243,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518340250.520738"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "69"
-            endingLineNumber = "69"
+            startingLineNumber = "101"
+            endingLineNumber = "101"
             landmarkName = "turnPage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -337,11 +337,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "52"
+            endingLineNumber = "52"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -353,11 +353,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "80"
+            endingLineNumber = "80"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -369,11 +369,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "44"
-            endingLineNumber = "44"
+            startingLineNumber = "70"
+            endingLineNumber = "70"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -385,11 +385,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "45"
-            endingLineNumber = "45"
+            startingLineNumber = "71"
+            endingLineNumber = "71"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -401,11 +401,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518337662.136448"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "42"
-            endingLineNumber = "42"
+            startingLineNumber = "67"
+            endingLineNumber = "67"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -417,11 +417,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518340250.520738"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "78"
-            endingLineNumber = "78"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
             landmarkName = "turnPage()"
             landmarkType = "7">
          </BreakpointContent>
@@ -449,7 +449,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518341222.996527"
+                  timestampString = "518388991.364767"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -464,7 +464,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518341222.999001"
+                  timestampString = "518388991.366899"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -479,7 +479,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518341223.00193"
+                  timestampString = "518388991.369423"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -494,7 +494,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518341223.004474"
+                  timestampString = "518388991.371937"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -511,12 +511,44 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/StoryViewController.swift"
-            timestampString = "518340532.430243"
+            timestampString = "518389905.730823"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
+            startingLineNumber = "100"
+            endingLineNumber = "100"
             landmarkName = "turnPage()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuskyQuest/StoryViewController.swift"
+            timestampString = "518389905.730823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "viewDidAppear(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuskyQuest/StoryViewController.swift"
+            timestampString = "518389905.730823"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "viewDidAppear(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

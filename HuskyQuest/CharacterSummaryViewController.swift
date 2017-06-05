@@ -26,6 +26,8 @@ class CharacterSummaryViewController: UIViewController {
 
     @IBOutlet weak var majorLabel: UILabel!
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -53,6 +55,10 @@ class CharacterSummaryViewController: UIViewController {
         progressCharisma.setProgress(Float(AppData.shared.stats["Charisma"]!) / 25.0, animated: true)
         
         majorLabel.text = AppData.shared.characterMajor
+        
+        
+        
+        
         
     }
 

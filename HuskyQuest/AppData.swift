@@ -13,9 +13,17 @@ class AppData: NSObject {
     static let shared = AppData()
     
     var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
+    
+    //Array holding all the data
     var jsonArray:[[String:Any]] = []
+    
+    //Current Tree that the game is in
     var currTree:[[String:Any]] = []
+    
+    //Story so far
     var history = ""
+    
+    var experience = 0
     
     //Bookmark storage for jumping between trees in the story
     var bookmarkIndex = [

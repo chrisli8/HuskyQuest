@@ -19,12 +19,43 @@ class StoryViewController: UIViewController {
     var choices:[[String:Any]] = []
     var currTreeName = "main"
     var data = AppData.shared
+    
+    var timer = Timer()
+    var progressBarTimer = Timer()
 
+    @IBOutlet weak var ProgressBar: UIProgressView!
+    
     override func viewDidLoad() {
         turnPage()
+        self.navigationItem.hidesBackButton = true
+        let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.back(sender:)))
+        self.navigationItem.leftBarButtonItem = newBackButton
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(true)
+        ProgressBar.progress = 0
+        timerReset()
+    }
+    
+    func timerReset(){
+        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
+        progressBarTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true);
+    }
+    
+    func showProgress(){
+        let _ = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
+    }
+    func autoClick(){
+        let buttonArray = [Choice1Button, Choice2Button, Choice3Button]
+        let randomButtonID = Int(arc4random_uniform(UInt32(choices.count - 1)))
+        choiceClick(buttonArray[randomButtonID]!)
     }
     
     @IBAction func choiceClick(_ sender: UIButton) {
+        
+        data.experience += 5
         
         //Updates what was picked
         var pickedChoice : [String:Any] = [:]
@@ -40,6 +71,7 @@ class StoryViewController: UIViewController {
         } else {
             data.history = "\(data.history) \n\n"
         }
+        
         //StatChanges
         if pickedChoice["increase"] != nil {
             var currentStat = data.stats[pickedChoice["increase"] as! String]!
@@ -60,16 +92,22 @@ class StoryViewController: UIViewController {
         if "\(String(describing: pickedChoice["response"]))" != "current" {
             data.bookmarkIndex[currTreeName] = pickedChoice["response"] as! Int
         }
-        
+        timerReset()
         turnPage()
         
+        
+    }
+    
+    func back(sender:UIBarButtonItem){
+        timer.invalidate()
+        _ = navigationController?.popViewController(animated: true)
     }
     
     func turnPage(){
         
         //Updates story text box and hides/unhides choices based on existence
         StoryTextBox.text = data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String
-        data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String). "
+        data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String) "
         self.choices = data.currTree[data.bookmarkIndex[currTreeName]!]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
         self.Choice2Button.isHidden = true
