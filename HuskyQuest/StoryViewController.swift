@@ -105,9 +105,20 @@ class StoryViewController: UIViewController {
         if pickedChoice["changeTree"] != nil {
             currTreeName = pickedChoice["changeTree"] as! String
         }
-        //updates index on the tree based off the attribute attached the choice
-        if "\(String(describing: pickedChoice["page"]))" != "current" {
-            data.bookmarkIndex[currTreeName] = pickedChoice["page"] as! Int
+        
+        // Checks for pass/fail finals at the end, otherwise updates index normally
+        let choiceTitle = pickedChoice["title"] as! String
+        let chosenIndex = pickedChoice["page"] as! Int
+        if choiceTitle == "Take finals" {
+            if compareStats() == false {
+                // failing exam is index 13 instead of 14 so minus one
+                data.bookmarkIndex[currTreeName] = chosenIndex - 1
+            } else {
+                data.bookmarkIndex[currTreeName] = chosenIndex
+            }
+        } else {
+            //updates index on the tree based off the attribute attached the choice
+            data.bookmarkIndex[currTreeName] = chosenIndex
         }
         
         timerReset()
@@ -115,6 +126,27 @@ class StoryViewController: UIViewController {
         data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String) "
         
         
+    }
+    
+    // compares the stats in the passFinals array to the char stats
+    // passFinals stats are determined by the major user chooses
+    func compareStats() -> Bool {
+        let major = data.characterMajor
+        var reqs : [String : Int] = [:]
+        if major == "CSE" {
+            reqs = data.passFinals[0]
+        } else if major == "INFO" {
+            reqs = data.passFinals[1]
+        } else if major == "HCDE" {
+            reqs = data.passFinals[2]
+        }
+        let reqArrays = Array(reqs.keys)
+        for req in reqArrays {
+            if data.stats[req]! < reqs[req]! {
+                return false
+            }
+        }
+        return true
     }
     
     func back(sender:UIBarButtonItem){
