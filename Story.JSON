@@ -3,70 +3,70 @@
   {
   "treetype" : "filler",
   "tree" :[
-        {
-            "page" : 0,
-            "type":"story",
-            "text":"You currently have free time between classes",
-            "image" : "outside.jpg",
-            "choices":[
-                {"title":"Continue","page":1}
+            {
+                "page" : 0,
+                "type":"story",
+                "text":"You currently have free time between classes",
+                "image" : "outside.jpg",
+                "choices":[
+                    {"title":"Continue","page":1}
+                    ]
+            },
+            {
+                "page" : 1,
+                "type":"choice",
+                "text":"What will you do?",
+                "choices":[
+                    {"title":"Go to Office Hours","page":2},
+                    {"title":"Study at the Library","page":3},
+                    {"title":"Take a Break at the HUB","page":4}
+                    ]
+            },
+            {
+                "page" : 2,
+                "type":"result",
+                "text":"The TA clarified many misunderstandings. (Understanding Up)",
+                "image" : "officeHours.jpg",
+                "choices":[
+                    {"title":"Continue","page":5, "increase": "U"}
                 ]
-        },
-        {
-            "page" : 1,
-            "type":"choice",
-            "text":"What will you do?",
-            "choices":[
-                {"title":"Go to Office Hours","page":2},
-                {"title":"Study at the Library","page":3},
-                {"title":"Take a Break at the HUB","page":4}
+            },
+            {
+                "page" : 3,
+                "type":"result",
+                "text":"Your study time at the library was productive. (Diligence Up)",
+                "image" : "library.jpg",
+                "choices":[
+                    {"title":"Continue","page":5, "increase": "D"}
+                    ]
+            },
+            {
+                "page" : 4,
+                "type":"result",
+                "text":"You spent time talking with Friend A. (Charisma Up)",
+                "image" : "friendtalking.jpg",
+                "choices":[
+                    {"title":"Continue","page":5, "increase": "C"}
+                    ]
+            },
+            {
+                "page" : 5,
+                "type":"story",
+                "text":"You went to your next class.",
+                "image" : "class.jpg",
+                "choices":[
+                    {"title":"Start Over","page":6}
                 ]
-        },
-        {
-            "page" : 2,
-            "type":"result",
-            "text":"The TA clarified many misunderstandings. (Understanding Up)",
-            "image" : "officeHours.jpg",
-            "choices":[
-                {"title":"Continue","page":5, "increase": "U"}
-            ]
-        },
-        {
-            "page" : 3,
-            "type":"result",
-            "text":"Your study time at the library was productive. (Diligence Up)",
-            "image" : "library.jpg",
-            "choices":[
-                {"title":"Continue","page":5, "increase": "D"}
-                ]
-        },
-        {
-            "page" : 4,
-            "type":"result",
-            "text":"You spent time talking with Friend A. (Charisma Up)",
-            "image" : "friendtalking.jpg",
-            "choices":[
-                {"title":"Continue","page":5, "increase": "C"}
-                ]
-        },
-        {
-            "page" : 5,
-            "type":"story",
-            "text":"You went to your next class.",
+            },
+    	   {
+        	"page" : 6,
+            "type": "story",
+            "text": "Class just ended.",
             "image" : "class.jpg",
             "choices":[
-                {"title":"Start Over","page": “6”}
-            ]
-        },
-	{
-    	"page" : 6,
-            "type":"story",
-            "text”:”Class just ended.”,
-            "image" : "class.jpg",
-            "choices":[
-                {"title”:”Continue”,”page": “0”}
-            ]
-        }
+                    {"title”:”Continue”,”page": "0"}
+                    ]
+            }
         ]
   },
 
@@ -189,7 +189,7 @@
             "type" : "story",
             "text" : "Unfortunately, you have performed below average on your finals. It looks like you've spent too much time out with friends and too little studying. ",
             "choices":[
-                {"title":"Continue", "page”:15}
+                {"title":"Continue", "page":15}
             ]
         },
         {
@@ -197,24 +197,25 @@
             "type" : "story",
             "text" : "Congratulations! You've performed well on your finals and are well on your way to getting into the technical major of your choice!",
             "choices":[
-                {"title":"Continue", "page”:15}
+                {"title":"Continue", "page":15}
             ]
         },
         {
             "page" : 15,
             "type" : "story",
-            "text" : “Suddenly the world becomes black, you feel yourself slipping away unsure of what is going on.“,
+            "text" : "Suddenly the world becomes black, you feel yourself slipping away unsure of what is going on.",
             "choices":[
-                {"title”:”Continue“, "page”:16}
+                {"title":"Continue", "page":16}
             ]
         },
         {
             "page" : 16,
-            "type" : “story”,
-            "text" : “You wake up in  your room. You look  at your clock. The first class of the quarter starts soon.”,
+            "type" : "story",
+            "text" : "You wake up in  your room. You look  at your clock. The first class of the quarter starts soon.",
             "choices":[
-                {"title”:”You wake up and get ready. You attend your class”, "page”:0, “changeTree”:”filler”},
-		{"title”:”You go back to sleep”, "page”:0},
+                {"title":"You wake up and get ready. You attend your ", "page"
+            :0, "changeTree":"filler"},
+		{"title":"You go back to sleep", "page":0},
             ]
         }
     ]
