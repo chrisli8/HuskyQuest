@@ -58,10 +58,6 @@ class CharacterSummaryViewController: UIViewController {
         
         majorLabel.text = AppData.shared.characterMajor
         
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -85,6 +81,9 @@ class CharacterSummaryViewController: UIViewController {
         // Reset story so new user can experience what's going on
         
         if !DEBUG {
+            // Set experience to 0
+            AppData.shared.experience = 0.0
+            
             // Sets the story to the beginning
             AppData.shared.history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
             
