@@ -16,7 +16,6 @@ class AppData: NSObject {
     var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
     
     
-    
     //Array holding all the data
     var jsonArray:[[String:Any]] = []
     
@@ -24,9 +23,9 @@ class AppData: NSObject {
     var currTree:[[String:Any]] = []
     
     //Story so far
-    var history = ""
+    var history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
     
-    var experience = 0
+    var experience = 0.0
     
     //Bookmark storage for jumping between trees in the story
     var bookmarkIndex = [
@@ -95,6 +94,13 @@ class AppData: NSObject {
         // HCDE requirements
         ["Diligence": 10, "Creativity": 20, "Understanding": 10, "Charisma": 20]
     ]
+
+    let defaults = UserDefaults.standard
+    
+    var auto : Bool = true
+    var saveTimer : Double = 10
+    
+    var timer = Timer()
     
     override init(){
         super.init()
@@ -106,6 +112,24 @@ class AppData: NSObject {
             
             return(fileURL, [.createIntermediateDirectories])
         }
+        
+        characterCreated = (defaults.value(forKey: "characterCreated") != nil)
+        timer = Timer.scheduledTimer(timeInterval: saveTimer, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
+        
+        /*if defaults.value(forKey: "auto") as? String == "no" {
+            auto = false
+        }*/
+        
+        if characterCreated{
+            history = defaults.value(forKey: "history") as! String
+            bookmarkIndex = defaults.value(forKey: "bookmarkIndex") as! [String : Int]
+            stats = defaults.value(forKey: "stats") as! [String : Int]
+            personalDescription = defaults.value(forKey: "personalDescription") as! [String : String]
+            characterMajor = defaults.value(forKey: "characterMajor") as! String
+            history = defaults.value(forKey:"history") as! String
+            experience = defaults.value(forKey: "experience") as! Double
+        }
+        
         
         //downloads and and loads json file
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
@@ -120,6 +144,54 @@ class AppData: NSObject {
 
     }
     
+    func reset(){
+        
+        history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
+        
+        experience = 0.0
+        
+        bookmarkIndex = [
+            "main" : 0,
+            "filler" : 0,
+            "subtreenamehere" : 0
+        ]
+        
+        characterMajor = "CSE" // Defaults to CSE in case the user doesn't choose
+        
+        characterCreated = false
+        
+        personalDescription = [
+            "Name" : "",
+            "Gender" : "",
+            "Age" : "",
+            "Ethnicity": "",
+            "Personality": ""
+        ]
+        
+        stats = [
+            "RR": 5, //Roommate relationship CHANGE in JSON
+            "H" : 10, //Health CHANGE IN JSON
+            "Diligence": 0,
+            "Creativity": 0,
+            "Understanding": 0,
+            "Charisma": 0
+        ]
+        saveData()
+        
+    }
+    
+    func saveData(){
+        
+        defaults.setValue(history, forKey: "history")
+        defaults.setValue(bookmarkIndex, forKey: "bookmarkIndex")
+        defaults.setValue(stats, forKey: "stats")
+        defaults.setValue(personalDescription, forKey: "personalDescription")
+        defaults.setValue(characterMajor, forKey: "characterMajor")
+        defaults.setValue("charactermade", forKey: "characterCreated")
+        defaults.setValue(experience, forKey: "experience")
+        
+    }
+    
     func loadJSON() {
         let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
         
@@ -132,7 +204,14 @@ class AppData: NSObject {
         }
     }
     
+    func applicationDidEnterBackground(_ application: UIApplication){
+        saveData()
+        
+    }
     
+    func applicationWillTerminate(_application : UIApplication){
+        saveData()
+    }
 }
 
 

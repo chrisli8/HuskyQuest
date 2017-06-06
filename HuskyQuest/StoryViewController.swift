@@ -15,6 +15,7 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var Choice1Button: UIButton!
     @IBOutlet weak var Choice2Button: UIButton!
     @IBOutlet weak var Choice3Button: UIButton!
+    @IBOutlet weak var experienceLabel: UILabel!
     
     var choices:[[String:Any]] = []
     var currTreeName = "main"
@@ -43,12 +44,14 @@ class StoryViewController: UIViewController {
     
     func timerReset(){
         timer.invalidate()
-        timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
         progressBarTimer.invalidate()
-        progressBarTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true);
         progressIncrement.invalidate()
-        progressNum = 0
-        ProgressBar.progress = 0
+        if data.auto == true{
+            timer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(self.autoClick), userInfo: nil, repeats: true);
+            progressBarTimer = Timer.scheduledTimer(timeInterval: 5, target: self, selector: #selector(self.showProgress), userInfo: nil, repeats: true);
+            progressNum = 0
+            ProgressBar.progress = 0
+        }
     }
     
     func showProgress(){
@@ -66,9 +69,10 @@ class StoryViewController: UIViewController {
         choiceClick(buttonArray[randomButtonID]!)
     }
     
+    
     @IBAction func choiceClick(_ sender: UIButton) {
-        
-        data.experience += 5
+        timer.invalidate()
+        data.experience += 0.5
         
         //Updates what was picked
         var pickedChoice : [String:Any] = [:]
@@ -116,6 +120,7 @@ class StoryViewController: UIViewController {
             //updates index on the tree based off the attribute attached the choice
             data.bookmarkIndex[currTreeName] = chosenIndex
         }
+        
         timerReset()
         turnPage()
         data.history = "\(data.history) \(data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String) "
@@ -153,7 +158,7 @@ class StoryViewController: UIViewController {
         
         //Updates story text box and hides/unhides choices based on existence
         StoryTextBox.text = data.currTree[data.bookmarkIndex[currTreeName]!]["text"] as! String
-        
+        self.experienceLabel.text = String(data.experience)
         self.choices = data.currTree[data.bookmarkIndex[currTreeName]!]["choices"] as! [[String:Any]]
         self.Choice1Button.setTitle(self.choices[0]["title"] as? String, for: UIControlState.normal)
         self.Choice2Button.isHidden = true

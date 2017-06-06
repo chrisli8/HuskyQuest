@@ -26,6 +26,13 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    
+    
+    /*@IBAction func newBtnPressed(_ sender: Any) {
+        data.reset()
+    }*/
+
+    
     @IBAction func loadBtnPressed(_ sender: UIButton) {
         
         // Load previously created character

@@ -1,5 +1,5 @@
 //
-//  SettingsViewController.swift
+//  data.defaultsViewController.swift
 //  HuskyQuest
 //
 //  Created by studentuser on 6/5/17.
@@ -10,11 +10,27 @@ import UIKit
 import Alamofire
 
 class SettingsViewController: UIViewController {
-
+    
+    var data = AppData.shared
     @IBOutlet weak var updateButton: UIButton!
+    @IBOutlet weak var autoButton: UIButton!
+    @IBOutlet weak var AutoTimerText: UITextField!
+    @IBOutlet weak var SaveRefreshTimer: UITextField!
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        if data.defaults.value(forKey: "autotimer") != nil {
+            AutoTimerText.text = (data.defaults.value(forKey: "autotimer") as! String)
+        }
+        if data.defaults.value(forKey: "savetimer") != nil {
+            SaveRefreshTimer.text = (data.defaults.value(forKey: "savetimer") as! String)
+        }
+        
+        if data.auto == false {
+            autoButton.setTitle("Auto Disabled", for: UIControlState.normal)
+            autoButton.backgroundColor = UIColor.gray
+            data.defaults.setValue("no", forKey: "auto")
+        }
+        
         // Do any additional setup after loading the view.
     }
     @IBAction func UpdateClick(_ sender: Any) {
@@ -34,6 +50,28 @@ class SettingsViewController: UIViewController {
         
     }
 
+    @IBAction func SaveEditted(_ sender: Any) {
+        if Double(SaveRefreshTimer.text!) != nil {
+            data.defaults.setValue(SaveRefreshTimer.text, forKey: "savetimer")
+        }
+    }
+
+    @IBAction func TimerEditted(_ sender: Any) {
+        if Double(AutoTimerText.text!) != nil {
+            data.defaults.setValue(AutoTimerText.text, forKey: "autotimer")
+        }
+    }
+    @IBAction func autoPressed(_ sender: Any) {
+        data.auto = !data.auto
+        if autoButton.titleLabel!.text == "Auto Enabled" {
+            autoButton.setTitle("Auto Disabled", for: UIControlState.normal)
+            autoButton.backgroundColor = UIColor.gray
+            data.defaults.setValue("no", forKey: "auto")
+        } else {
+            autoButton.setTitle("Auto Enabled", for: UIControlState.normal)
+            data.defaults.setValue("yes", forKey: "auto")
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
