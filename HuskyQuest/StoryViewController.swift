@@ -79,7 +79,7 @@ class StoryViewController: UIViewController {
     }
     func autoClick(){
         let buttonArray = [Choice1Button, Choice2Button, Choice3Button]
-        let randomButtonID = Int(arc4random_uniform(UInt32(choices.count - 1)))
+        let randomButtonID = Int(arc4random_uniform(UInt32(choices.count)))
         choiceClick(buttonArray[randomButtonID]!)
     }
     
