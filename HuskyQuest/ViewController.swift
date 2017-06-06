@@ -28,9 +28,9 @@ class ViewController: UIViewController {
 
     
     
-    /*@IBAction func newBtnPressed(_ sender: Any) {
+    @IBAction func newBtnPressed(_ sender: Any) {
         data.reset()
-    }*/
+    }
 
     
     @IBAction func loadBtnPressed(_ sender: UIButton) {

@@ -90,6 +90,7 @@ class AppData: NSObject {
     
     var auto : Bool = true
     var saveTimer : Double = 10
+    var autoTimer : Double = 10
     
     var timer = Timer()
     
@@ -107,9 +108,19 @@ class AppData: NSObject {
         characterCreated = (defaults.value(forKey: "characterCreated") != nil)
         timer = Timer.scheduledTimer(timeInterval: saveTimer, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
         
-        /*if defaults.value(forKey: "auto") as? String == "no" {
+        if defaults.value(forKey: "auto") as? String == "no" {
             auto = false
-        }*/
+        }
+        
+        if defaults.value(forKey: "autotimer") != nil {
+            autoTimer = Double(defaults.value(forKey: "autotimer") as! String)!
+        
+        }
+        
+        if defaults.value(forKey: "savetimer") != nil {
+            saveTimer = Double(defaults.value(forKey: "savetimer") as! String)!
+            
+        }
         
         if characterCreated{
             history = defaults.value(forKey: "history") as! String

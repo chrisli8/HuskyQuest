@@ -51,15 +51,8 @@
                                     <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="newBtnPressed:" destination="BYZ-38-t0r" eventType="touchDragInside" id="vqW-3A-fud"/>
                                     <segue destination="rjf-qV-amP" kind="show" id="n7c-B6-glL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mkV-Z0-q32">
-                                <rect key="frame" x="302" y="629" width="57" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Settings"/>
-                                <connections>
-                                    <segue destination="J81-Jq-wNc" kind="show" id="qjV-76-G15"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1113,7 +1106,6 @@
     <inferredMetricsTieBreakers>
         <segue reference="n7c-B6-glL"/>
         <segue reference="Rjp-Lj-9ml"/>
-        <segue reference="qjV-76-G15"/>
         <segue reference="8LT-qK-rh1"/>
         <segue reference="eRF-3U-cIY"/>
     </inferredMetricsTieBreakers>
