@@ -8,12 +8,13 @@
 
 import UIKit
 
-class CharacterCreationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate {
+class CharacterCreationViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDelegate, UITextFieldDelegate {
     @IBOutlet weak var characterPicker: UIPickerView!
     
     @IBOutlet weak var personalityLabel: UILabel!
     
-    @IBOutlet weak var personalityDescription: UITextView!
+    //@IBOutlet weak var personalityDescription: UITextView!
+    @IBOutlet weak var personalityDescription: UILabel!
     
     @IBOutlet weak var nameLabel: UITextField!
     
@@ -35,6 +36,10 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         characterPicker.dataSource = self;
         loadPastData();
         // Do any additional setup after loading the view.
+        self.nameLabel.delegate = self
+        self.genderLabel.delegate = self
+        self.ageLabel.delegate = self
+        self.ethnicityLabel.delegate = self
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -58,6 +63,11 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     }
     
     // MARK: - Helper Methods
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     // if the map has data, populate the fields with those values so users can
     // have persiting data when they want to go back
