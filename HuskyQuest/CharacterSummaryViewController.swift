@@ -26,6 +26,8 @@ class CharacterSummaryViewController: UIViewController {
 
     @IBOutlet weak var majorLabel: UILabel!
     
+    let DEBUG = false
+    
     
     
     override func viewDidLoad() {
@@ -82,6 +84,15 @@ class CharacterSummaryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Reset story so new user can experience what's going on
         
+        if !DEBUG {
+            // Sets the story to the beginning
+            AppData.shared.history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
+            
+            // Reset all trees to 0
+            for (tree, _) in AppData.shared.bookmarkIndex {
+                AppData.shared.bookmarkIndex[tree] = 0
+            }
+        }
     }
     
     /*

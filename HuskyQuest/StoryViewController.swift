@@ -105,7 +105,7 @@ class StoryViewController: UIViewController {
         //StatChanges
         if pickedChoice["increase"] != nil {
             let statname = pickedChoice["increase"] as! String
-            var currentStat = data.stats[statname] as! Int
+            var currentStat = data.stats[statname]! as Int
             currentStat += 1
             data.stats[pickedChoice["increase"] as! String] = currentStat
         }
