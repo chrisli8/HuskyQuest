@@ -87,6 +87,15 @@ class AppData: NSObject {
         "ESFP" : "Spontaneous, energetic and enthusiastic people – life is never boring around them."
     ]
     
+    let passFinals: [[String: Int]] = [
+        // CSE requirements
+        ["Diligence": 20, "Creativity": 10, "Understanding": 20, "Charisma": 10],
+        // INFO requirements
+        ["Diligence": 15, "Creativity": 15, "Understanding": 15, "Charisma": 15],
+        // HCDE requirements
+        ["Diligence": 10, "Creativity": 20, "Understanding": 10, "Charisma": 20]
+    ]
+    
     override init(){
         super.init()
         //Loads the default file destination for the story.json file
