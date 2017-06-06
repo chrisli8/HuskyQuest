@@ -53,6 +53,9 @@ class AppData: NSObject {
     var stats: [String: Int] = [
         "RR": 5, //Roommate relationship CHANGE in JSON
         "H" : 10, //Health CHANGE IN JSON
+        "U" : 1,
+        "D" : 2,
+        "C" : 3,
         "Diligence": 0,
         "Creativity": 0,
         "Understanding": 0,
@@ -111,7 +114,7 @@ class AppData: NSObject {
             let documentsURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0]
             let fileURL = documentsURL.appendingPathComponent("story.json")
             
-            return(fileURL, [.createIntermediateDirectories])
+            return(fileURL, [.removePreviousFile, .createIntermediateDirectories])
         }
         
         characterCreated = defaults.value(forKey: "characterCreated") != nil
@@ -139,6 +142,8 @@ class AppData: NSObject {
             characterMajor = defaults.value(forKey: "characterMajor") as! String
             history = defaults.value(forKey:"history") as! String
             experience = defaults.value(forKey: "experience") as! Double
+        } else {
+            reset()
         }
         
         
@@ -156,17 +161,13 @@ class AppData: NSObject {
     }
     
     func reset(){
-        
         history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
-        
         experience = 0.0
-        
         bookmarkIndex = [
             "main" : 0,
             "filler" : 0,
             "subtreenamehere" : 0
         ]
-        
         characterMajor = "CSE" // Defaults to CSE in case the user doesn't choose
         
         characterCreated = false
@@ -182,11 +183,23 @@ class AppData: NSObject {
         stats = [
             "RR": 5, //Roommate relationship CHANGE in JSON
             "H" : 10, //Health CHANGE IN JSON
+            "U" : 1,
+            "D" : 2,
+            "C" : 3,
             "Diligence": 0,
             "Creativity": 0,
             "Understanding": 0,
             "Charisma": 0
         ]
+        
+        defaults.removeObject(forKey: "history")
+        defaults.removeObject(forKey: "bookmarkIndex")
+        defaults.removeObject(forKey: "stats")
+        defaults.removeObject(forKey: "personalDescription")
+        defaults.removeObject(forKey: "characterMajor")
+        defaults.removeObject(forKey: "characterCreated")
+        defaults.removeObject(forKey: "experience")
+
         saveData()
         
     }

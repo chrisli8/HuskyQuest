@@ -48,7 +48,7 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         
         //downloads and and loads json file
         Alamofire.download(AppData.shared.url!, method: .get, to: destination).responseJSON{response in
-            print(response.result)
+            debugPrint(response)
         }
         
     }

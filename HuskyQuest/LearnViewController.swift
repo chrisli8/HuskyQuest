@@ -58,7 +58,23 @@ class LearnViewController: UIViewController {
             understandingUpBtn.isHidden = false
             charismaUpBtn.isHidden = false
         }
+        checkStatMax()
         experienceLabel.text = String(data.experience)
+    }
+    
+    func checkStatMax() {
+        if data.stats["Diligence"]! >= 25 {
+            diligenceUpBtn.isHidden = true
+        }
+        if data.stats["Creativity"]! >= 25 {
+            creativityUpBtn.isHidden = true
+        }
+        if data.stats["Understanding"]! >= 25 {
+            understandingUpBtn.isHidden = true
+        }
+        if data.stats["Charisma"]! >= 25 {
+            charismaUpBtn.isHidden = true
+        }
     }
     
     // redraws progress bars based on
@@ -78,27 +94,27 @@ class LearnViewController: UIViewController {
     // MARK: - Actions
     
     @IBAction func diligenceUpPressed(_ sender: Any) {
-        updateExperience()
         data.stats["Diligence"] = data.stats["Diligence"]! + 1
         updateProgress()
+        updateExperience()
     }
     
     @IBAction func creativityUpPressed(_ sender: Any) {
-        updateExperience()
         data.stats["Creativity"] = data.stats["Creativity"]! + 1
         updateProgress()
+        updateExperience()
     }
     
     @IBAction func understandingUpPressed(_ sender: Any) {
-        updateExperience()
         data.stats["Understanding"] = data.stats["Understanding"]! + 1
         updateProgress()
+        updateExperience()
     }
     
     @IBAction func charismaUpPressed(_ sender: Any) {
-        updateExperience()
         data.stats["Charisma"] = data.stats["Charisma"]! + 1
         updateProgress()
+        updateExperience()
     }
     
 

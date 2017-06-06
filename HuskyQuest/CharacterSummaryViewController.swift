@@ -26,6 +26,8 @@ class CharacterSummaryViewController: UIViewController {
 
     @IBOutlet weak var majorLabel: UILabel!
     
+    let DEBUG = false
+    
     
     
     override func viewDidLoad() {
@@ -56,10 +58,6 @@ class CharacterSummaryViewController: UIViewController {
         
         majorLabel.text = AppData.shared.characterMajor
         
-        
-        
-        
-        
     }
 
     override func didReceiveMemoryWarning() {
@@ -81,11 +79,8 @@ class CharacterSummaryViewController: UIViewController {
     // sets data to singleton when progressing
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Reset story so new user can experience what's going on
-        AppData.shared.history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
-        AppData.shared.bookmarkIndex["main"] = 0
-        AppData.shared.bookmarkIndex["filler"] = 0
-        AppData.shared.bookmarkIndex["subtreenamehere"] = 0
         
+        AppData.shared.reset()
     }
     
     /*

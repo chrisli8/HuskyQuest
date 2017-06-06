@@ -74,6 +74,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         if AppData.shared.personalDescription["Ethnicity"] != "" {
             ethnicityLabel.text = AppData.shared.personalDescription["Ethnicity"]
         }
+        AppData.shared.characterMajor = "CSE"
     }
     
     // Sets stats based on personality type
