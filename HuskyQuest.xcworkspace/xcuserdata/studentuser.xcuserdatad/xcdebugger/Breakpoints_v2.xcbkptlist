@@ -813,11 +813,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/SettingsViewController.swift"
-            timestampString = "518406396.129377"
+            timestampString = "518430604.89317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "58"
+            endingLineNumber = "58"
             landmarkName = "SaveEditted(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -877,11 +877,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/SettingsViewController.swift"
-            timestampString = "518406396.129377"
+            timestampString = "518430604.89317"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "66"
-            endingLineNumber = "66"
+            startingLineNumber = "69"
+            endingLineNumber = "69"
             landmarkName = "autoPressed(_:)"
             landmarkType = "7">
          </BreakpointContent>

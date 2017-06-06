@@ -9,7 +9,7 @@
 import UIKit
 import Alamofire
 
-class SettingsViewController: UIViewController {
+class SettingsViewController: UIViewController, UITextFieldDelegate {
     
     var data = AppData.shared
     @IBOutlet weak var updateButton: UIButton!
@@ -30,6 +30,9 @@ class SettingsViewController: UIViewController {
             autoButton.backgroundColor = UIColor.gray
             data.defaults.setValue("no", forKey: "auto")
         }
+        
+        AutoTimerText.delegate = self
+        SaveRefreshTimer.delegate = self
         
         // Do any additional setup after loading the view.
     }
@@ -69,12 +72,20 @@ class SettingsViewController: UIViewController {
             data.defaults.setValue("no", forKey: "auto")
         } else {
             autoButton.setTitle("Auto Enabled", for: UIControlState.normal)
+            autoButton.backgroundColor = UIColor.green
             data.defaults.setValue("yes", forKey: "auto")
         }
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        return string == numberFiltered
     }
     
 

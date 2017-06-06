@@ -55,7 +55,16 @@
             "text":"You went to your next class.",
             "image" : "class.jpg",
             "choices":[
-                {"title":"Start Over","page": "Exit"}
+                {"title":"Start Over","page": “6”}
+            ]
+        },
+	{
+    	"page" : 6,
+            "type":"story",
+            "text”:”Class just ended.”,
+            "image" : "class.jpg",
+            "choices":[
+                {"title”:”Continue”,”page": “0”}
             ]
         }
         ]
@@ -180,7 +189,7 @@
             "type" : "story",
             "text" : "Unfortunately, you have performed below average on your finals. It looks like you've spent too much time out with friends and too little studying. ",
             "choices":[
-                {"title":"Continue", "page":-1}
+                {"title":"Continue", "page”:15}
             ]
         },
         {
@@ -188,23 +197,24 @@
             "type" : "story",
             "text" : "Congratulations! You've performed well on your finals and are well on your way to getting into the technical major of your choice!",
             "choices":[
-                {"title":"Continue", "page":-1}
+                {"title":"Continue", "page”:15}
             ]
         },
         {
-            "page" : -1,
+            "page" : 15,
             "type" : "story",
-            "text" : "To be continued ..",
+            "text" : “Suddenly the world becomes black, you feel yourself slipping away unsure of what is going on.“,
             "choices":[
-                {"title":"", "page":0}
+                {"title”:”Continue“, "page”:16}
             ]
         },
         {
-            "page" : -2,
-            "type" : "",
-            "text" : "",
+            "page" : 16,
+            "type" : “story”,
+            "text" : “You wake up in  your room. You look  at your clock. The first class of the quarter starts soon.”,
             "choices":[
-                {"title":"", "page":0}
+                {"title”:”You wake up and get ready. You attend your class”, "page”:0, “changetree”:”filler},
+		{"title”:”You go back to sleep”, "page”:0},
             ]
         }
     ]
