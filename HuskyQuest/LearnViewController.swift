@@ -18,6 +18,10 @@ class LearnViewController: UIViewController {
     @IBOutlet weak var diligenceUpBtn: UIButton!
     @IBOutlet weak var diligenceProgress: UIProgressView!
     @IBOutlet weak var experienceLabel: UILabel!
+    @IBOutlet weak var diligenceLabel: UILabel!
+    @IBOutlet weak var creativityLabel: UILabel!
+    @IBOutlet weak var understandingLabel: UILabel!
+    @IBOutlet weak var charismaLabel: UILabel!
 
     var data = AppData.shared
     
@@ -42,13 +46,13 @@ class LearnViewController: UIViewController {
     // enables and diables stat-up buttons when experence is 0
     // deincrements experience by one
     func updateExperience() {
+        data.experience = data.experience - 1
         if data.experience <= 0 {
             diligenceUpBtn.isHidden = true
             creativityUpBtn.isHidden = true
             understandingUpBtn.isHidden = true
             charismaUpBtn.isHidden = true
         } else {
-            data.experience = data.experience - 1
             diligenceUpBtn.isHidden = false
             creativityUpBtn.isHidden = false
             understandingUpBtn.isHidden = false
@@ -60,6 +64,11 @@ class LearnViewController: UIViewController {
     // redraws progress bars based on
     func updateProgress() {
         // Set Stats
+        diligenceLabel.text = String(describing: data.stats["Diligence"]!)
+        creativityLabel.text = String(describing: data.stats["Creativity"]!)
+        understandingLabel.text = String(describing: data.stats["Understanding"]!)
+        charismaLabel.text = String(describing: data.stats["Charisma"]!)
+        
         diligenceProgress.setProgress(Float(AppData.shared.stats["Diligence"]!) / 25.0, animated: false)
         creativityProgress.setProgress(Float(AppData.shared.stats["Creativity"]!) / 25.0, animated: false)
         understandingProgress.setProgress(Float(AppData.shared.stats["Understanding"]!) / 25.0, animated: false)
