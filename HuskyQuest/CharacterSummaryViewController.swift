@@ -80,18 +80,7 @@ class CharacterSummaryViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Reset story so new user can experience what's going on
         
-        if !DEBUG {
-            // Set experience to 0
-            AppData.shared.experience = 0.0
-            
-            // Sets the story to the beginning
-            AppData.shared.history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
-            
-            // Reset all trees to 0
-            for (tree, _) in AppData.shared.bookmarkIndex {
-                AppData.shared.bookmarkIndex[tree] = 0
-            }
-        }
+        AppData.shared.reset()
     }
     
     /*
