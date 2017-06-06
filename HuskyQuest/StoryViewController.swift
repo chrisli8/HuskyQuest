@@ -18,7 +18,7 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var experienceLabel: UILabel!
     
     var choices:[[String:Any]] = []
-    var currTreeName = "main"
+    var currTreeName = ""
     var data = AppData.shared
     
     var timer = Timer()
@@ -29,11 +29,24 @@ class StoryViewController: UIViewController {
     @IBOutlet weak var ProgressBar: UIProgressView!
     
     override func viewDidLoad() {
-        turnPage()
         self.navigationItem.hidesBackButton = true
         let newBackButton = UIBarButtonItem(title: "Back", style: UIBarButtonItemStyle.plain, target: self, action: #selector(self.back(sender:)))
         self.navigationItem.leftBarButtonItem = newBackButton
+
         
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if data.defaults.value(forKey: "currtreename") == nil{
+            currTreeName = "main"
+        } else {
+            currTreeName = data.defaults.value(forKey: "currtreename") as! String
+            if currTreeName == "filler"{
+                data.currTree = data.jsonArray[0]["tree"] as! [[String:Any]]
+            }
+        }
+        
+        turnPage()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -91,7 +104,8 @@ class StoryViewController: UIViewController {
         
         //StatChanges
         if pickedChoice["increase"] != nil {
-            var currentStat = data.stats[pickedChoice["increase"] as! String]!
+            let statname = pickedChoice["increase"] as! String
+            var currentStat = data.stats[statname] as! Int
             currentStat += 1
             data.stats[pickedChoice["increase"] as! String] = currentStat
         }
@@ -104,6 +118,10 @@ class StoryViewController: UIViewController {
         //Tree Swap Support
         if pickedChoice["changeTree"] != nil {
             currTreeName = pickedChoice["changeTree"] as! String
+            data.defaults.setValue(currTreeName, forKey: "currtreename")
+            if currTreeName == "filler"{
+                data.currTree = data.jsonArray[0]["tree"] as! [[String : Any]]
+            }
         }
         
         // Checks for pass/fail finals at the end, otherwise updates index normally
