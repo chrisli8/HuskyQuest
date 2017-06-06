@@ -16,7 +16,6 @@ class AppData: NSObject {
     var url = URL(string:"https://students.washington.edu/kpham97/Story.JSON")
     
     
-    
     //Array holding all the data
     var jsonArray:[[String:Any]] = []
     
@@ -26,7 +25,7 @@ class AppData: NSObject {
     //Story so far
     var history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
     
-    var experience = 0
+    var experience = 0.0
     
     //Bookmark storage for jumping between trees in the story
     var bookmarkIndex = [
@@ -89,6 +88,9 @@ class AppData: NSObject {
     
     let defaults = UserDefaults.standard
     
+    var auto : Bool = true
+    var saveTimer : Double = 10
+    
     var timer = Timer()
     
     override init(){
@@ -101,24 +103,22 @@ class AppData: NSObject {
             
             return(fileURL, [.createIntermediateDirectories])
         }
+        
         characterCreated = (defaults.value(forKey: "characterCreated") != nil)
-        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
+        timer = Timer.scheduledTimer(timeInterval: saveTimer, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
+        
+        /*if defaults.value(forKey: "auto") as? String == "no" {
+            auto = false
+        }*/
         
         if characterCreated{
             history = defaults.value(forKey: "history") as! String
-            print(defaults.value(forKey: "history") as! String)
             bookmarkIndex = defaults.value(forKey: "bookmarkIndex") as! [String : Int]
-            print(defaults.value(forKey: "bookmarkIndex") as! [String : Int])
             stats = defaults.value(forKey: "stats") as! [String : Int]
-            print(defaults.value(forKey: "personalDescription") as! [String : String])
             personalDescription = defaults.value(forKey: "personalDescription") as! [String : String]
-            print(defaults.value(forKey: "characterMajor") as! String)
             characterMajor = defaults.value(forKey: "characterMajor") as! String
-            print(defaults.value(forKey: "stats") as! [String : Int])
             history = defaults.value(forKey:"history") as! String
-            print(defaults.value(forKey:"history") as! String)
-            experience = defaults.value(forKey: "experience") as! Int
-            print(defaults.value(forKey: "experience") as! Int)
+            experience = defaults.value(forKey: "experience") as! Double
         }
         
         
@@ -135,7 +135,44 @@ class AppData: NSObject {
 
     }
     
+    func reset(){
+        
+        history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
+        
+        experience = 0.0
+        
+        bookmarkIndex = [
+            "main" : 0,
+            "filler" : 0,
+            "subtreenamehere" : 0
+        ]
+        
+        characterMajor = "CSE" // Defaults to CSE in case the user doesn't choose
+        
+        characterCreated = false
+        
+        personalDescription = [
+            "Name" : "",
+            "Gender" : "",
+            "Age" : "",
+            "Ethnicity": "",
+            "Personality": ""
+        ]
+        
+        stats = [
+            "RR": 5, //Roommate relationship CHANGE in JSON
+            "H" : 10, //Health CHANGE IN JSON
+            "Diligence": 0,
+            "Creativity": 0,
+            "Understanding": 0,
+            "Charisma": 0
+        ]
+        saveData()
+        
+    }
+    
     func saveData(){
+        
         defaults.setValue(history, forKey: "history")
         defaults.setValue(bookmarkIndex, forKey: "bookmarkIndex")
         defaults.setValue(stats, forKey: "stats")
@@ -144,8 +181,6 @@ class AppData: NSObject {
         defaults.setValue("charactermade", forKey: "characterCreated")
         defaults.setValue(experience, forKey: "experience")
         
-        print(defaults.value(forKey: "history") as! String)
-        print(defaults.value(forKey: "bookmarkIndex") as! [String : Int])
     }
     
     func loadJSON() {
@@ -161,7 +196,6 @@ class AppData: NSObject {
     }
     
     func applicationDidEnterBackground(_ application: UIApplication){
-        
         saveData()
         
     }
