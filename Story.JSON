@@ -28,7 +28,7 @@
                 "text":"The TA clarified many misunderstandings. (Understanding Up)",
                 "image" : "officeHours.jpg",
                 "choices":[
-                    {"title":"Continue","page":5, "increase": "U"}
+                    {"title":"Continue","page":5, "increase": "Understanding"}
                 ]
             },
             {
@@ -37,7 +37,7 @@
                 "text":"Your study time at the library was productive. (Diligence Up)",
                 "image" : "library.jpg",
                 "choices":[
-                    {"title":"Continue","page":5, "increase": "D"}
+                    {"title":"Continue","page":5, "increase": "Diligence"}
                     ]
             },
             {
@@ -46,7 +46,7 @@
                 "text":"You spent time talking with Friend A. (Charisma Up)",
                 "image" : "friendtalking.jpg",
                 "choices":[
-                    {"title":"Continue","page":5, "increase": "C"}
+                    {"title":"Continue","page":5, "increase": "Charisma"}
                     ]
             },
             {
@@ -55,7 +55,7 @@
                 "text":"You went to your next class.",
                 "image" : "class.jpg",
                 "choices":[
-                    {"title":"Start Over","page":6}
+                    {"title":"Continue","page":6}
                 ]
             },
     	   {
@@ -64,7 +64,7 @@
             "text": "Class just ended.",
             "image" : "class.jpg",
             "choices":[
-                    {"title”:”Continue”,”page": "0"}
+                    {"title":"Continue","page": 0}
                     ]
             }
         ]
@@ -213,7 +213,7 @@
             "type" : "story",
             "text" : "You wake up in  your room. You look  at your clock. The first class of the quarter starts soon.",
             "choices":[
-                {"title":"You wake up and get ready. You attend your ", "page"
+                {"title":"You wake up and get ready. You attend your class. ", "page"
             :0, "changeTree":"filler"},
 		{"title":"You go back to sleep", "page":0},
             ]
