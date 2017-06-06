@@ -1,7 +1,7 @@
 
 [
   {
-  "treetype" : "filler1",
+  "treetype" : "filler",
   "tree" :[
         {
             "page" : 0,
@@ -213,7 +213,7 @@
             "type" : “story”,
             "text" : “You wake up in  your room. You look  at your clock. The first class of the quarter starts soon.”,
             "choices":[
-                {"title”:”You wake up and get ready. You attend your class”, "page”:0, “changetree”:”filler},
+                {"title”:”You wake up and get ready. You attend your class”, "page”:0, “changeTree”:”filler”},
 		{"title”:”You go back to sleep”, "page”:0},
             ]
         }
