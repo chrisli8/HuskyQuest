@@ -24,7 +24,7 @@ class AppData: NSObject {
     var currTree:[[String:Any]] = []
     
     //Story so far
-    var history = ""
+    var history = "You've arrived to the University of Washington, and begin moving your belongings into the dorm. Your new roommate is already there. You look around and notice they haven't unpacked yet."
     
     var experience = 0
     
@@ -87,6 +87,10 @@ class AppData: NSObject {
         "ESFP" : "Spontaneous, energetic and enthusiastic people – life is never boring around them."
     ]
     
+    let defaults = UserDefaults.standard
+    
+    var timer = Timer()
+    
     override init(){
         super.init()
         //Loads the default file destination for the story.json file
@@ -97,6 +101,26 @@ class AppData: NSObject {
             
             return(fileURL, [.createIntermediateDirectories])
         }
+        characterCreated = (defaults.value(forKey: "characterCreated") != nil)
+        timer = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
+        
+        if characterCreated{
+            history = defaults.value(forKey: "history") as! String
+            print(defaults.value(forKey: "history") as! String)
+            bookmarkIndex = defaults.value(forKey: "bookmarkIndex") as! [String : Int]
+            print(defaults.value(forKey: "bookmarkIndex") as! [String : Int])
+            stats = defaults.value(forKey: "stats") as! [String : Int]
+            print(defaults.value(forKey: "personalDescription") as! [String : String])
+            personalDescription = defaults.value(forKey: "personalDescription") as! [String : String]
+            print(defaults.value(forKey: "characterMajor") as! String)
+            characterMajor = defaults.value(forKey: "characterMajor") as! String
+            print(defaults.value(forKey: "stats") as! [String : Int])
+            history = defaults.value(forKey:"history") as! String
+            print(defaults.value(forKey:"history") as! String)
+            experience = defaults.value(forKey: "experience") as! Int
+            print(defaults.value(forKey: "experience") as! Int)
+        }
+        
         
         //downloads and and loads json file
         Alamofire.download(url!, method: .get, to: destination).responseJSON{response in
@@ -111,6 +135,19 @@ class AppData: NSObject {
 
     }
     
+    func saveData(){
+        defaults.setValue(history, forKey: "history")
+        defaults.setValue(bookmarkIndex, forKey: "bookmarkIndex")
+        defaults.setValue(stats, forKey: "stats")
+        defaults.setValue(personalDescription, forKey: "personalDescription")
+        defaults.setValue(characterMajor, forKey: "characterMajor")
+        defaults.setValue("charactermade", forKey: "characterCreated")
+        defaults.setValue(experience, forKey: "experience")
+        
+        print(defaults.value(forKey: "history") as! String)
+        print(defaults.value(forKey: "bookmarkIndex") as! [String : Int])
+    }
+    
     func loadJSON() {
         let content = NSData(contentsOf: FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("story.json"))
         
@@ -123,7 +160,15 @@ class AppData: NSObject {
         }
     }
     
+    func applicationDidEnterBackground(_ application: UIApplication){
+        
+        saveData()
+        
+    }
     
+    func applicationWillTerminate(_application : UIApplication){
+        saveData()
+    }
 }
 
 

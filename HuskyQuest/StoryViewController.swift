@@ -67,7 +67,7 @@ class StoryViewController: UIViewController {
     }
     
     @IBAction func choiceClick(_ sender: UIButton) {
-        
+        timer.invalidate()
         data.experience += 5
         
         //Updates what was picked
