@@ -104,6 +104,7 @@ class AppData: NSObject {
     var saveTimer : Double = 10
     var autoTimer : Double = 10
     
+    var autoSave = Timer()
     var timer = Timer()
     
     override init(){
@@ -120,7 +121,7 @@ class AppData: NSObject {
         characterCreated = defaults.value(forKey: "characterCreated") != nil
         timer = Timer.scheduledTimer(timeInterval: saveTimer, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
         
-        if defaults.value(forKey: "auto") as? String == "no" {
+        if defaults.value(forKey: "auto") != nil{
             auto = false
         }
         
@@ -199,6 +200,7 @@ class AppData: NSObject {
         defaults.removeObject(forKey: "characterMajor")
         defaults.removeObject(forKey: "characterCreated")
         defaults.removeObject(forKey: "experience")
+        defaults.removeObject(forKey: "currtreename")
 
         saveData()
         
