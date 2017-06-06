@@ -671,7 +671,7 @@
         <!--Menu-->
         <scene sceneID="Ry0-uh-1gA">
             <objects>
-                <viewController id="iHX-DZ-ERZ" sceneMemberID="viewController">
+                <viewController id="iHX-DZ-ERZ" customClass="MenuViewController" customModule="HuskyQuest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="IaQ-B6-BfF"/>
                         <viewControllerLayoutGuide type="bottom" id="MUc-Gm-wVC"/>
@@ -737,15 +737,31 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wat-Fy-gmj">
+                                <rect key="frame" x="319" y="355" width="30" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="CjG-Lj-0EW"/>
+                                    <constraint firstAttribute="height" constant="30" id="hFB-2r-aVG"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="wat-Fy-gmj" firstAttribute="top" secondItem="IaQ-B6-BfF" secondAttribute="bottom" constant="335" id="PVm-XQ-Wwc"/>
                             <constraint firstItem="y0C-CA-VAE" firstAttribute="centerY" secondItem="iqg-8I-eZq" secondAttribute="centerY" id="QGh-N2-0wd"/>
                             <constraint firstAttribute="trailingMargin" secondItem="y0C-CA-VAE" secondAttribute="trailing" id="cpW-LW-GB7"/>
                             <constraint firstItem="y0C-CA-VAE" firstAttribute="leading" secondItem="iqg-8I-eZq" secondAttribute="leadingMargin" id="rsg-xA-kZC"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wat-Fy-gmj" secondAttribute="trailing" constant="10" id="wEW-Tn-854"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Menu" id="ILw-hG-uuU"/>
+                    <connections>
+                        <outlet property="learnNotification" destination="wat-Fy-gmj" id="2vP-ri-CUX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xYT-3t-J02" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -1105,8 +1121,8 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="abf-fy-Njd"/>
-        <segue reference="4XH-j0-A0k"/>
+        <segue reference="eRF-3U-cIY"/>
+        <segue reference="8LT-qK-rh1"/>
         <segue reference="WvE-YD-FlJ"/>
-        <segue reference="w2v-hZ-dG9"/>
     </inferredMetricsTieBreakers>
 </document>
