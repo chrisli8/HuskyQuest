@@ -27,6 +27,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     // Data source based on personality test
     var pickerDataSource = [["Introversion", "Extraversion"], ["Intuition", "Sensing"], ["Thinking", "Feeling"], ["Judging", "Perceiving"]];
+    var data = AppData.shared
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -39,6 +40,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated);
         removePartialCurlTap();
+        data.characterCreated = false
     }
 
     override func didReceiveMemoryWarning() {

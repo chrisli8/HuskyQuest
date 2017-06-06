@@ -248,7 +248,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "126"
             endingLineNumber = "126"
-            landmarkName = "turnPage()"
+            landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -422,7 +422,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "135"
             endingLineNumber = "135"
-            landmarkName = "turnPage()"
+            landmarkName = "compareStats()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -449,7 +449,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518407146.291453"
+                  timestampString = "518408096.409921"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -464,7 +464,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518407146.294354"
+                  timestampString = "518408096.412562"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -479,7 +479,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518407146.296787"
+                  timestampString = "518408096.4155"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -494,7 +494,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/HistoryViewController.swift"
-                  timestampString = "518407146.299252"
+                  timestampString = "518408096.417356"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "13"
@@ -516,7 +516,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "125"
             endingLineNumber = "125"
-            landmarkName = "turnPage()"
+            landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -564,8 +564,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "98"
             endingLineNumber = "98"
-            landmarkName = "init()"
-            landmarkType = "7">
+            landmarkName = "AppData"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -607,7 +607,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/AppData.swift"
-            timestampString = "518407146.184074"
+            timestampString = "518408096.306276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "128"
@@ -623,7 +623,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/AppData.swift"
-            timestampString = "518407146.184074"
+            timestampString = "518408096.306276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "130"
@@ -639,13 +639,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/AppData.swift"
-            timestampString = "518407146.184074"
+            timestampString = "518408096.306276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "213"
             endingLineNumber = "213"
-            landmarkName = "AppData"
-            landmarkType = "3">
+            landmarkName = "loadJSON()"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -655,12 +655,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/AppData.swift"
-            timestampString = "518407146.184074"
+            timestampString = "518408096.306276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "210"
             endingLineNumber = "210"
-            landmarkName = "applicationDidEnterBackground(_:)"
+            landmarkName = "loadJSON()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -671,7 +671,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "HuskyQuest/AppData.swift"
-            timestampString = "518407146.184074"
+            timestampString = "518408096.306276"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "129"
@@ -703,7 +703,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/ViewController.swift"
-                  timestampString = "518407146.328602"
+                  timestampString = "518408096.441464"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -718,7 +718,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/ViewController.swift"
-                  timestampString = "518407146.331037"
+                  timestampString = "518408096.443442"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -733,7 +733,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/ViewController.swift"
-                  timestampString = "518407146.33358"
+                  timestampString = "518408096.445387"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -748,7 +748,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/ViewController.swift"
-                  timestampString = "518407146.336538"
+                  timestampString = "518408096.44731"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -834,38 +834,23 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "91"
             endingLineNumber = "91"
-            landmarkName = "AppData"
-            landmarkType = "3">
+            landmarkName = "passFinals"
+            landmarkType = "24">
             <Locations>
                <Location
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
-                  symbolName = "HuskyQuest.AppData.auto.getter : Swift.Bool"
+                  symbolName = "HuskyQuest.AppData.defaults.getter : __ObjC.UserDefaults"
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/AppData.swift"
-                  timestampString = "518407146.362454"
+                  timestampString = "518408096.47113"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "18">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "HuskyQuest.AppData.auto.setter : Swift.Bool"
-                  moduleName = "HuskyQuest"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/AppData.swift"
-                  timestampString = "518407146.365369"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "31">
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "35">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -875,12 +860,12 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/AppData.swift"
-                  timestampString = "518407146.367286"
+                  timestampString = "518408096.473529"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "91"
-                  endingLineNumber = "91"
-                  offsetFromSymbolStart = "3771">
+                  startingLineNumber = "98"
+                  endingLineNumber = "98"
+                  offsetFromSymbolStart = "4726">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -924,7 +909,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/SettingsViewController.swift"
-                  timestampString = "518407146.377539"
+                  timestampString = "518408096.481919"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -939,7 +924,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/SettingsViewController.swift"
-                  timestampString = "518407146.379389"
+                  timestampString = "518408096.483715"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -954,7 +939,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/SettingsViewController.swift"
-                  timestampString = "518407146.382074"
+                  timestampString = "518408096.486641"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -969,7 +954,7 @@
                   moduleName = "HuskyQuest"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/studentuser/Desktop/HuskyQuest/HuskyQuest/SettingsViewController.swift"
-                  timestampString = "518407146.383871"
+                  timestampString = "518408096.489244"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "14"
@@ -991,6 +976,22 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "114"
             endingLineNumber = "114"
+            landmarkName = "choiceClick(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "HuskyQuest/StoryViewController.swift"
+            timestampString = "518407500.638743"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "78"
+            endingLineNumber = "78"
             landmarkName = "choiceClick(_:)"
             landmarkType = "7">
          </BreakpointContent>

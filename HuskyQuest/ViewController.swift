@@ -29,7 +29,11 @@ class ViewController: UIViewController {
     
     
     @IBAction func newBtnPressed(_ sender: Any) {
+        
+        UserDefaults.standard.removeObject(forKey: "characterCreated")
         data.reset()
+        data.characterCreated = false
+        
     }
 
     

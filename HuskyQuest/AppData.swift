@@ -114,7 +114,7 @@ class AppData: NSObject {
             return(fileURL, [.createIntermediateDirectories])
         }
         
-        characterCreated = (defaults.value(forKey: "characterCreated") != nil)
+        characterCreated = defaults.value(forKey: "characterCreated") != nil
         timer = Timer.scheduledTimer(timeInterval: saveTimer, target: self, selector: #selector(self.saveData), userInfo: nil, repeats: true)
         
         if defaults.value(forKey: "auto") as? String == "no" {
