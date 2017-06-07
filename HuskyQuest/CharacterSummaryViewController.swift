@@ -69,7 +69,9 @@ class CharacterSummaryViewController: UIViewController {
         
         let rand2 = Int(arc4random_uniform(3))
         
-        GPA.text = GPA.text! + String(describing: (CGFloat(rand2) + CGFloat(Float(arc4random()) / Float(UINT32_MAX))))
+        let num = NSString(format: "%.2f", Double((CGFloat(rand2) + CGFloat(Float(arc4random()) / Float(UINT32_MAX)))))
+        
+        GPA.text = GPA.text! + String(describing: num)
         
     }
 
