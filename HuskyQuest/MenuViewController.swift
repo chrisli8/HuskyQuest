@@ -23,7 +23,7 @@ class MenuViewController: UIViewController {
         if AppData.shared.experience > 0 {
             learnNotification.isHidden = false
         }
-        learnNotification.layer.cornerRadius = 15
+        learnNotification.layer.cornerRadius = 20
         learnNotification.layer.masksToBounds = true
         learnNotification.text = String(Int(AppData.shared.experience as Double))
     }

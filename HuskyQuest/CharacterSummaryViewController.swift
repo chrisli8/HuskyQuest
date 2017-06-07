@@ -23,6 +23,8 @@ class CharacterSummaryViewController: UIViewController {
     var facts = ["basketball", "swimming", "water polo",
                  "badminton", "tennis", "track and field"]
     
+    @IBOutlet weak var GPA: UILabel!
+    
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     // 0-25 for each stat value
@@ -64,6 +66,10 @@ class CharacterSummaryViewController: UIViewController {
         
         let sport1 = facts[rand]
         randomFacts.text = randomFacts.text! + sport1
+        
+        let rand2 = Int(arc4random_uniform(3))
+        
+        GPA.text = GPA.text! + String(describing: (CGFloat(rand2) + CGFloat(Float(arc4random()) / Float(UINT32_MAX))))
         
     }
 
