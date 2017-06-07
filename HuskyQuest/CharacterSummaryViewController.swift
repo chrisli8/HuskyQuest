@@ -67,7 +67,7 @@ class CharacterSummaryViewController: UIViewController {
         let sport1 = facts[rand]
         randomFacts.text = randomFacts.text! + sport1
         
-        let rand2 = Int(arc4random_uniform(3))
+        let rand2 = Int(arc4random_uniform(4 - 2)) + 2
         
         let num = NSString(format: "%.2f", Double((CGFloat(rand2) + CGFloat(Float(arc4random()) / Float(UINT32_MAX)))))
         
