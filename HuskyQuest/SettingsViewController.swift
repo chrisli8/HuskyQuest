@@ -28,7 +28,11 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         if data.auto == false {
             autoButton.setTitle("Auto Disabled", for: UIControlState.normal)
             autoButton.backgroundColor = UIColor.gray
-            data.defaults.setValue("no", forKey: "auto")
+            data.defaults.setValue("disabled", forKey: "auto")
+        } else {
+            autoButton.setTitle("Auto Enabled", for: UIControlState.normal)
+            autoButton.backgroundColor = UIColor.green
+            data.defaults.removeObject(forKey: "auto")
         }
         
         AutoTimerText.delegate = self
@@ -56,12 +60,14 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
     @IBAction func SaveEditted(_ sender: Any) {
         if Double(SaveRefreshTimer.text!) != nil {
             data.defaults.setValue(SaveRefreshTimer.text, forKey: "savetimer")
+            data.saveTimer = Double(SaveRefreshTimer.text!)!
         }
     }
 
     @IBAction func TimerEditted(_ sender: Any) {
         if Double(AutoTimerText.text!) != nil {
             data.defaults.setValue(AutoTimerText.text, forKey: "autotimer")
+            data.autoTimer = Double(AutoTimerText.text!)!
         }
     }
     @IBAction func autoPressed(_ sender: Any) {
@@ -69,11 +75,11 @@ class SettingsViewController: UIViewController, UITextFieldDelegate {
         if autoButton.titleLabel!.text == "Auto Enabled" {
             autoButton.setTitle("Auto Disabled", for: UIControlState.normal)
             autoButton.backgroundColor = UIColor.gray
-            data.defaults.setValue("no", forKey: "auto")
+            data.defaults.setValue("disabled", forKey: "auto")
         } else {
             autoButton.setTitle("Auto Enabled", for: UIControlState.normal)
             autoButton.backgroundColor = UIColor.green
-            data.defaults.setValue("yes", forKey: "auto")
+            data.defaults.removeObject(forKey: "auto")
         }
     }
     override func didReceiveMemoryWarning() {

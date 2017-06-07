@@ -84,12 +84,10 @@ class CharacterSummaryViewController: UIViewController {
     // MARK: - Segue
     
     // sets data to singleton when progressing
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+    /*override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Reset story so new user can experience what's going on
-        
-        AppData.shared.reset()
     }
-    
+    */
     /*
     // MARK: - Navigation
 

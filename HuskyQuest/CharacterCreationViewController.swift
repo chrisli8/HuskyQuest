@@ -32,6 +32,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        AppData.shared.reset()
         characterPicker.delegate = self;
         characterPicker.dataSource = self;
         loadPastData();
@@ -43,6 +44,7 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        AppData.shared.reset()
         super.viewDidAppear(animated);
         removePartialCurlTap();
         data.characterCreated = false
@@ -196,6 +198,8 @@ class CharacterCreationViewController: UIViewController, UIPickerViewDataSource,
         AppData.shared.personalDescription["Ethnicity"] = ethnicityLabel.text
         AppData.shared.personalDescription["Personality"] = personalityLabel.text
         setStats(personality: AppData.shared.personalDescription["Personality"]!)
+        AppData.shared.defaults.setValue(AppData.shared.stats, forKey: "stats")
+        AppData.shared.defaults.setValue(AppData.shared.personalDescription, forKey: "personalDescription")
     }
     
     // prevents user from progressing if they haven't set their name, gender, age, ethnicity
