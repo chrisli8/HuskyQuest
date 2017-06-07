@@ -19,16 +19,18 @@ class CharacterSummaryViewController: UIViewController {
     @IBOutlet weak var progressUnderstanding: UIProgressView!
     @IBOutlet weak var progressCharisma: UIProgressView!
     
+    @IBOutlet weak var randomFacts: UILabel!
+    var facts = ["basketball", "swimming", "water polo",
+                 "badminton", "tennis", "track and field"]
+    
     @IBOutlet weak var btnBack: UIButton!
     @IBOutlet weak var btnNext: UIButton!
     // 0-25 for each stat value
-    // 30-40 stating total stats total
+    // 30-40 starting total stats total
 
     @IBOutlet weak var majorLabel: UILabel!
     
     let DEBUG = false
-    
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +59,11 @@ class CharacterSummaryViewController: UIViewController {
         progressCharisma.setProgress(Float(AppData.shared.stats["Charisma"]!) / 25.0, animated: true)
         
         majorLabel.text = AppData.shared.characterMajor
+        
+        let rand = Int(arc4random_uniform(5))
+        
+        let sport1 = facts[rand]
+        randomFacts.text = randomFacts.text! + sport1
         
     }
 
@@ -90,5 +97,6 @@ class CharacterSummaryViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    
 
 }
