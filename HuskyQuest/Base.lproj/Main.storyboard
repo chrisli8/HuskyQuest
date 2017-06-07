@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12086"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -179,6 +179,7 @@
                         <constraints>
                             <constraint firstItem="Byk-Z5-beJ" firstAttribute="top" secondItem="SPK-7D-qXR" secondAttribute="bottom" id="2ee-Lw-eai"/>
                             <constraint firstItem="nXG-Ah-Wa8" firstAttribute="top" secondItem="r4W-fl-See" secondAttribute="bottom" constant="8" id="4YT-Wk-Y5p"/>
+                            <constraint firstItem="zrz-kc-Tgb" firstAttribute="top" secondItem="hY8-28-T3V" secondAttribute="bottom" constant="56" id="4ti-eX-IaK"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="5ZM-KX-onm"/>
                             <constraint firstItem="Bue-Lq-Co8" firstAttribute="top" secondItem="S7y-GP-oAO" secondAttribute="bottom" constant="8" id="5zx-iE-06W"/>
                             <constraint firstItem="hY8-28-T3V" firstAttribute="top" secondItem="GBd-6y-OoL" secondAttribute="bottom" constant="8" id="6So-k9-3pq"/>
@@ -195,7 +196,6 @@
                             <constraint firstItem="nXG-Ah-Wa8" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="Qjz-ig-Rlk"/>
                             <constraint firstItem="gfb-m4-hbV" firstAttribute="trailing" secondItem="9m4-KN-2fu" secondAttribute="trailingMargin" id="S7u-sD-q7I"/>
                             <constraint firstItem="r4W-fl-See" firstAttribute="top" secondItem="zrz-kc-Tgb" secondAttribute="bottom" constant="37" id="TKd-ob-nkE"/>
-                            <constraint firstItem="gfb-m4-hbV" firstAttribute="top" secondItem="nXG-Ah-Wa8" secondAttribute="bottom" constant="89" id="UHm-hs-ExD"/>
                             <constraint firstItem="r4W-fl-See" firstAttribute="leading" secondItem="9m4-KN-2fu" secondAttribute="leadingMargin" id="V7e-O2-dBz"/>
                             <constraint firstItem="GBd-6y-OoL" firstAttribute="centerX" secondItem="9m4-KN-2fu" secondAttribute="centerX" id="VHf-MF-KbS"/>
                             <constraint firstItem="GBd-6y-OoL" firstAttribute="top" secondItem="YGd-8e-h8c" secondAttribute="bottom" constant="8" id="Vl9-NO-EBl"/>
@@ -1098,11 +1098,20 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Lb-0T-jYn">
+                                <rect key="frame" x="145" y="471" width="85" height="30"/>
+                                <state key="normal" title="Main Screen"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="rdX-Xf-5eT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CHc-mu-3WC" firstAttribute="centerX" secondItem="WY1-GV-MBN" secondAttribute="centerX" id="AeJ-Jm-qUU"/>
                             <constraint firstItem="CHc-mu-3WC" firstAttribute="centerY" secondItem="WY1-GV-MBN" secondAttribute="centerY" id="FbV-O0-Dz0"/>
+                            <constraint firstItem="0Lb-0T-jYn" firstAttribute="centerX" secondItem="WY1-GV-MBN" secondAttribute="centerX" id="NZa-Hz-qij"/>
+                            <constraint firstItem="0Lb-0T-jYn" firstAttribute="top" secondItem="CHc-mu-3WC" secondAttribute="bottom" constant="47.5" id="r99-Cd-OWw"/>
                             <constraint firstItem="CHc-mu-3WC" firstAttribute="leading" secondItem="WY1-GV-MBN" secondAttribute="leadingMargin" id="z0J-Mn-SD6"/>
                             <constraint firstAttribute="trailingMargin" secondItem="CHc-mu-3WC" secondAttribute="trailing" id="zri-RC-srq"/>
                         </constraints>
@@ -1124,9 +1133,10 @@
         <image name="FrontScreen" width="187" height="333"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="8LT-qK-rh1"/>
-        <segue reference="abf-fy-Njd"/>
-        <segue reference="4XH-j0-A0k"/>
         <segue reference="WvE-YD-FlJ"/>
+        <segue reference="4XH-j0-A0k"/>
+        <segue reference="abf-fy-Njd"/>
+        <segue reference="rdX-Xf-5eT"/>
+        <segue reference="8LT-qK-rh1"/>
     </inferredMetricsTieBreakers>
 </document>
